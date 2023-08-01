@@ -1,7 +1,7 @@
 <template>
   <div class="">
     <section
-      class="py-24 px-5 md:py-3 md:px-10 2xl:px-28 bg-secondary bg-opacity-20 h-[90vh] md:h-[90vh] 2xl:h-[80vh] flex flex-col items-center md:grid md:grid-cols-2 md:gap-14 md:justify-between md:items-center overflow-hidden"
+      class="py-24 px-5 md:py-3 md:px-10 2xl:px-28 bg-secondary bg-opacity-20 h-[90vh] md:h-[90vh] 2xl:h-[80vh] flex flex-col items-center md:grid md:grid-cols-2 md:gap-14 md:justify-between md:items-center overflow-hidden relative"
     >
       <div class="">
         <div class="text-center md:text-left">
@@ -62,12 +62,10 @@
           </nuxt-link>
         </div>
       </div>
-      <div class="mt-16 md:mt-0 md:-mr-32">
-        <img src="~/assets/img/Hero-image.png" class="w-full h-auto" />
-      </div>
+      <img src="~/assets/img/Hero-image.png" class="w-full h-auto absolute md:relative -bottom-44 md:bottom-auto" />
     </section>
     <section
-      class="py-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-white h-[160vh] overflow-hidden md:min-h-screen"
+      class="pt-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-white overflow-hidden md:min-h-screen"
     >
       <div class="mb-10 md:w-2/5">
         <h2 class="text-xl md:text-3xl font-bold font-heading">How it works</h2>
@@ -76,7 +74,7 @@
           goal is to make you one.
         </p>
       </div>
-      <div class="overflow-hidden flex flex-col md:flex-row-reverse gap-10 md:gap-5 items-center justify-between">
+      <div class="overflow-hidden md:flex md:flex-row-reverse md:gap-20 relative pb-96 md:pb-0">
         <div class="md:w-2/3 md:flex md:flex-col md:items-start md:justify-start md:gap-5">
           <div class="md:flex gap-10">
             <div class="md:w-1/3 border-slate-100 border-b md:border-none py-5">
@@ -243,7 +241,7 @@
             </div>
           </div>
         </div>
-        <img src="~/assets/img/Genres-img.png" class="w-auto md:order-1 md:h-[528px]" />
+        <img src="~/assets/img/Genres-img.png" class="w-auto md:order-1 md:h-[528px] absolute md:relative -bottom-40 md:bottom-auto" />
       </div>
     </section>
   </div>
