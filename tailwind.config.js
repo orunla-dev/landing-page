@@ -10,6 +10,7 @@ module.exports = {
   theme: {
     fontFamily: {
       sans: ["Quicksand"],
+      heading: ["Josefin Sans"]
     },
     extend: {
       colors: {
