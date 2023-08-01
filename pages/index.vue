@@ -298,12 +298,12 @@
         </div>
         <img
           src="~/assets/img/Clubs-img.png"
-          class="w-full md:w-auto h-auto md:h-[528px] absolute md:relative -bottom-10 md:bottom-auto md:right-0"
+          class="w-full md:w-auto h-auto md:h-[528px] absolute md:relative -bottom-20 md:bottom-auto md:right-0"
         />
       </div>
     </section>
     <section
-      class="py-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-white overflow-hidden h-[75vh] md:h-[70vh] text-center flex justify-center relative"
+      class="py-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-white overflow-hidden h-[70vh] text-center flex justify-center relative"
     >
       <img src="~/assets/img/Books-img.png" class="absolute -bottom-72 md:-bottom-[27rem] -right-10" />
       <div class="md:w-1/2 mt-10">
