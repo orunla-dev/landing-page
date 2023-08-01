@@ -50,19 +50,22 @@
           <a
             href="https://app.orunla.ng/auth"
             target="_blank"
-            class="block md:inline-block bg-primary text-center text-white rounded-xl py-2 md:py-4 md:px-10 font-semibold hover:opacity-75 hover:-translate-y-1"
+            class="block md:inline-block bg-primary text-center text-white rounded-xl py-2 md:py-4 md:px-10 font-semibold hover:opacity-75 hover:-translate-y-1 hover:shadow"
           >
             Get started
           </a>
           <nuxt-link
             to="/about"
-            class="hidden md:inline-block bg-primary md:bg-slate-500 md:bg-opacity-20 md:text-black font-semibold text-center text-white rounded-xl py-2 md:py-4 md:px-10 hover:-translate-y-1"
+            class="hidden md:inline-block bg-primary md:bg-slate-500 md:bg-opacity-20 md:text-black font-semibold text-center text-white rounded-xl py-2 md:py-4 md:px-10 hover:-translate-y-1 hover:shadow"
           >
             Learn more
           </nuxt-link>
         </div>
       </div>
-      <img src="~/assets/img/Hero-image.png" class="w-full h-auto absolute md:relative -bottom-44 md:bottom-auto" />
+      <img
+        src="~/assets/img/Hero-image.png"
+        class="w-full h-auto absolute md:relative -bottom-44 md:bottom-auto"
+      />
     </section>
     <section
       class="pt-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-white overflow-hidden md:min-h-screen"
@@ -74,8 +77,12 @@
           goal is to make you one.
         </p>
       </div>
-      <div class="overflow-hidden md:flex md:flex-row-reverse md:gap-20 relative pb-96 md:pb-0">
-        <div class="md:w-2/3 md:flex md:flex-col md:items-start md:justify-start md:gap-5">
+      <div
+        class="overflow-hidden md:flex md:flex-row-reverse md:gap-20 relative pb-96 md:pb-0"
+      >
+        <div
+          class="md:w-2/3 md:flex md:flex-col md:items-start md:justify-start md:gap-5"
+        >
           <div class="md:flex gap-10">
             <div class="md:w-1/3 border-slate-100 border-b md:border-none py-5">
               <svg
@@ -114,7 +121,8 @@
                 Create an account
               </h2>
               <p class="">
-                Creating an account is easy; with a valid email and a strong password, you're good to go.
+                Creating an account is easy; with a valid email and a strong
+                password, you're good to go.
               </p>
             </div>
             <div class="md:w-1/3 border-slate-100 border-b md:border-none py-5">
@@ -156,7 +164,8 @@
                 Verify your email
               </h2>
               <p class="">
-                A verification mail would be sent to your email for verification. After this, you're good to go.
+                A verification mail would be sent to your email for
+                verification. After this, you're good to go.
               </p>
             </div>
           </div>
@@ -236,12 +245,86 @@
                 Choose your favourite genres
               </h2>
               <p class="">
-                Select your top genres from our curated genres to help us provide good recommendations and then you can start reading. 
+                Select your top genres from our curated genres to help us
+                provide good recommendations and then you can start reading.
               </p>
             </div>
           </div>
         </div>
-        <img src="~/assets/img/Genres-img.png" class="w-auto md:order-1 md:h-[528px] absolute md:relative -bottom-40 md:bottom-auto" />
+        <img
+          src="~/assets/img/Genres-img.png"
+          class="w-auto md:order-1 h-[528px] absolute md:relative -bottom-40 md:bottom-auto"
+        />
+      </div>
+    </section>
+    <section
+      class="pt-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-blue-50 overflow-hidden md:min-h-screen"
+    >
+      <div
+        class="overflow-hidden md:flex md:items-end md:gap-0 relative pb-80 md:pb-0"
+      >
+        <div class="md:w-3/5">
+          <div class="mb-10 md:w-96 flex-shrink-0">
+            <h2 class="text-xl md:text-3xl font-bold font-heading">
+              Join book loving clubs or create yours
+            </h2>
+            <p class="mb-10">
+              Become part of book loving communties where you can share book
+              reviews, engage in book-related discussions, and participate in
+              reading challenges.
+            </p>
+            <a
+              href="https://app.orunla.ng/clubs"
+              target="_blank"
+              class="hidden md:inline-block bg-primary md:bg-slate-500 md:bg-opacity-20 md:text-black font-semibold text-center text-white rounded-xl py-2 md:py-4 md:px-10 hover:-translate-y-1 hover:shadow"
+            >
+              Explore Clubs
+            </a>
+          </div>
+          <div class="flex gap-5 p-5 overflow-x-scroll">
+            <a
+              v-for="i in 4"
+              :key="i"
+              href="https://app.orunla.ng/club"
+              class="h-72 w-48 overflow-hidden bg-slate-50 flex-shrink-0 rounded-lg"
+            >
+              <div class="h-2/3 bg-slate-200" />
+              <div class="p-3">
+                <h2 class="font-heading">The Orunla Club</h2>
+                <p class="text-sm">The best club on Orunla, reading daily.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+        <img
+          src="~/assets/img/Clubs-img.png"
+          class="w-full md:w-auto h-auto md:h-[528px] absolute md:relative -bottom-10 md:bottom-auto md:right-0"
+        />
+      </div>
+    </section>
+    <section
+      class="py-10 px-5 md:py-20 md:px-10 2xl:px-28 bg-white overflow-hidden h-[75vh] md:h-[70vh] text-center flex justify-center relative"
+    >
+      <img src="~/assets/img/Books-img.png" class="absolute -bottom-72 md:-bottom-[27rem] -right-10" />
+      <div class="md:w-1/2 mt-10">
+        <p class="text-center font-heading mt-5 text-4xl inline-block">
+          Start your literary journey with Orunla
+        </p>
+        <br />
+        <div class="flex justify-center gap-5 mt-10">
+          <a
+            href="https://app.orunla.ng/auth"
+            class="block bg-primary text-white font-semibold p-3 capitalize md:p-5 rounded-xl hover:-translate-y-1 hover:shadow"
+          >
+            Create a free account
+          </a>
+          <a
+            href="https://app.orunla.ng/auth"
+            class="block bg-slate-100 text-primary font-semibold p-3 md:p-5 rounded-xl hover:-translate-y-1 hover:shadow"
+          >
+            Log In
+          </a>
+        </div>
       </div>
     </section>
   </div>

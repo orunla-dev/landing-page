@@ -46,7 +46,7 @@
         <a
           href="https://app.orunla.ng/auth"
           target="_blank"
-          class="bg-primary text-white px-3 py-2 md:px-8 md:py-3 rounded-lg hover:opacity-90"
+          class="bg-primary text-white px-3 py-2 md:px-8 md:py-3 rounded-lg hover:-translate-y-1 hover:shadow"
         >
           Get started
         </a>
@@ -61,7 +61,7 @@
           src="~/static/Orunla-Logo.png"
           class="w-24 md:w-28 h-auto grayscale"
         />
-        <p class="text-xl md:text-3xl font-semibold mt-5 mb-9 text-gray-700">
+        <p class="text-xl md:text-3xl font-semibold font-heading mt-5 mb-9 text-gray-700">
           Level up your reading skills and unlock rewards as you progress.
         </p>
         <a
@@ -71,8 +71,8 @@
         >
       </div>
       <div class="md:w-2/5">
-        <h3 class="md:text-xl font-semibold opacity-75 mb-5">Legal</h3>
-        <ul class="flex flex-col gap-3">
+        <h3 class="md:text-xl font-semibold font-heading opacity-75 mb-5">Legal</h3>
+        <ul class="flex justify-between md:flex-col gap-3">
           <li class="">
             <nuxt-link to="/terms" class="hover:text-secondary">Terms</nuxt-link>
           </li>
@@ -85,8 +85,8 @@
         </ul>
       </div>
       <div class="md:w-2/5">
-        <h3 class="md:text-xl font-semibold opacity-75 mb-5">Social</h3>
-        <ul class="flex flex-col gap-3">
+        <h3 class="md:text-xl font-semibold font-heading opacity-75 mb-5">Social</h3>
+        <ul class="flex justify-center md:flex-col gap-3">
           <li>
             <a
               href="https://linkedin.com/company/orunla-africa"
