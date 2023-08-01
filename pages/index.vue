@@ -333,5 +333,33 @@
 <script>
 export default {
   name: 'IndexPage',
+  data() {
+    return {
+      title: 'Discover the new way to read with friends on Orunla',
+      description: 'Reading made fun and rewarding. Level up your reading skills and unlock rewards as you progress.'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description
+        }
+      ]
+    }
+  }
 }
 </script>

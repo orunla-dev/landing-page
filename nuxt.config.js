@@ -12,7 +12,13 @@ export default {
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
       { hid: 'description', name: 'description', content: '' },
-      { name: 'format-detection', content: 'telephone=no' }
+      { name: 'format-detection', content: 'telephone=no' },
+      { hid: 'og:title', name: 'og:title', content: '' },
+      { hid: 'og:description', name: 'og:description', content: '' },
+      { hid: 'og:image', name: 'og:image', content: 'https://res.cloudinary.com/orunla/image/upload/v1679113100/Orunla/fqypmi0ecroup7miero4.jpg' },
+      { hid: 'og:url', name: 'og:url', content: 'https://orunla.ng' },
+      { hid: 'og:site_name', name: 'og:site_name', content: 'Orunla Africa' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
