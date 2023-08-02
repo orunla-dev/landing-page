@@ -76,6 +76,34 @@
 </template>
 <script>
 export default {
-  name: 'TermsPage'
+  name: 'TermsPage',
+  data() {
+    return {
+      title: 'Terms of Service - Orunla',
+      description: 'This Terms of Service (the "Terms") govern your use of the website located at orunla.ng. By using the Website, you agree to be bound by these Terms.'
+    }
+  },
+  head() {
+    return {
+      title: this.title,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.description
+        },
+        {
+          hid: 'og:title',
+          name: 'og:title',
+          content: this.title
+        },
+        {
+          hid: 'og:description',
+          name: 'og:description',
+          content: this.description
+        }
+      ]
+    }
+  }
 }
 </script>
