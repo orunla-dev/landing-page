@@ -4,19 +4,19 @@
       <header
         class="sticky top-0 z-50 flex bg-white justify-between items-center py-3 px-5 md:py-3 md:px-10 2xl:px-28 md:border-b"
       >
-        <input id="menu" type="checkbox" class="hidden" />
-        <label
-          for="menu"
+        <div
           class="md:hidden w-12 h-8 flex flex-col items-center justify-center gap-1 border p-2 rounded"
+          @click="menu = !menu"
         >
           <div class="pt-1 h-1 w-full bg-primary rounded" />
           <div class="pt-1 h-1 w-full bg-primary rounded" />
-        </label>
+        </div>
         <nuxt-link to="/">
           <img src="~/static/Orunla-Logo.png" class="w-24 md:w-28 h-auto transition-transform hover:scale-110 " />
         </nuxt-link>
         <ul
-          class="fixed md:relative hidden border-b-8 md:border-none border-secondary top-14 md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto bg-primary md:bg-transparent md:flex gap-5 items-center justify-center transition-all"
+          :class="menu ? 'md:relative' : 'hidden z-40 md:relative'"
+          class="fixed md:relative border-b-8 md:border-none border-secondary top-14 md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto bg-primary md:bg-transparent md:flex gap-5 items-center justify-center transition-all"
         >
           <li class="w-full">
             <a
@@ -133,6 +133,11 @@ export default {
       menu: false,
     }
   },
+  watch: {
+    $route: function() {
+      this.menu = false;
+    }
+  }
 }
 </script>
 

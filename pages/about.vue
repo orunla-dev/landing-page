@@ -55,10 +55,10 @@
         </div>
         <div class="md:w-1/2">
           <div class="md:ml-20 flex flex-col gap-5 pl-2 relative">
-            <div class="absolute top-10 bottom-44 left-0">
-              <div class="bg-slate-300 p-2 rounded-full" />
-              <div class="h-full w-1 bg-slate-200 my-0 mx-auto" />
-              <div class="bg-slate-300 p-2 rounded-full" />
+            <div class="absolute top-10 bottom-44 -left-1">
+              <div class="bg-primary p-2 rounded-full" />
+              <div class="h-full w-1 bg-primary my-0 mx-auto" />
+              <div class="bg-primary p-2 rounded-full" />
             </div>
             <div class="bg-primary bg-opacity-5 border-4 rounded-xl p-5 md:w-2/3">
               <h3 class="text-xl font-heading text-primary">Mission</h3>
