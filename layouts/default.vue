@@ -1,10 +1,10 @@
 <template>
   <div class="min-h-screen">
     <header
-      class="sticky top-0 z-50 flex justify-between items-center w-full bg-white/70 backdrop-blur"
+      class="sticky top-0 z-50 flex justify-between items-center w-full bg-white/50 backdrop-blur"
     >
       <div
-        class="md:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px]"
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px]"
       >
         <div
           class="md:hidden w-12 h-8 flex flex-col items-center justify-center gap-1 border p-2 rounded"
@@ -21,7 +21,7 @@
         </nuxt-link>
         <ul
           :class="menu ? 'md:relative' : 'hidden z-40 md:relative'"
-          class="fixed md:relative border-b-8 md:border-none border-secondary top-14 md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto bg-primary md:bg-transparent md:flex gap-16 items-center justify-center transition-all"
+          class="fixed md:relative border-b-8 md:border-none border-secondary top-14 md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto bg-primary md:bg-transparent md:flex gap-16 items-center justify-center transition-all text-[20px]"
         >
           <li class="w-full">
             <a
@@ -62,7 +62,7 @@
     </header>
     <nuxt-child />
     <footer class="bg-[#171340] text-white">
-      <div class="md:w-[1400px] mx-auto my-0 py-[16px] px-[20px]">
+      <div class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px]">
         <div class="py-5 flex justify-between gap-10">
           <div class="w-1/3">
             <svg
@@ -210,7 +210,9 @@
                 class="text-white hover:text-white/75 block mb-2"
                 >About Us</nuxt-link
               >
-              <nuxt-link to="/faq" class="text-white hover:text-white/75 block mb-2"
+              <nuxt-link
+                to="/faq"
+                class="text-white hover:text-white/75 block mb-2"
                 >FAQs</nuxt-link
               >
             </div>
