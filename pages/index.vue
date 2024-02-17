@@ -679,7 +679,7 @@
           </div>
           <form action="" class="mt-10" @sumbit.prevent="">
             <div
-              class="group inline-flex items-center gap-5 border border-primary/50 focus-within:border-primary/75 bg-white my-0 mx-auto px-5 py-3 rounded-[8px]"
+              class="group inline-flex items-center gap-3 md:gap-5 border border-primary/50 focus-within:border-primary/75 bg-white my-0 mx-auto p-3 md:px-5 md:py-3 rounded-[8px]"
             >
               <svg
                 width="16"
@@ -698,7 +698,7 @@
               </svg>
               <input
                 type="email"
-                class="w-[500px] bg-transparent outline-none hover:outline-none focus:outline-none placeholder:font-semibold placeholder:text-primary/50"
+                class="w-full md:w-[500px] bg-transparent outline-none hover:outline-none focus:outline-none placeholder:font-semibold placeholder:text-primary/50"
                 placeholder="Your Email"
               />
               <AppButton>Submit</AppButton>
