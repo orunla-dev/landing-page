@@ -8,21 +8,22 @@
       class="sticky top-0 z-50 flex justify-between items-center w-full bg-white/50 backdrop-blur"
     >
       <div
-        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px]"
+        class="w-full md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px]"
       >
-        <div
-          class="md:hidden w-12 h-8 flex flex-col items-center justify-center gap-1 border p-2 rounded"
-          @click="menu = !menu"
-        >
-          <div class="pt-1 h-1 w-full bg-primary rounded" />
-          <div class="pt-1 h-1 w-full bg-primary rounded" />
-        </div>
         <nuxt-link to="/">
           <img
             src="~/static/Orunla-Logo.png"
             class="w-24 md:w-[167px] h-auto"
           />
         </nuxt-link>
+        <div
+          class="md:hidden w-12 h-8 flex flex-col items-center justify-center gap-2"
+          @click="menu = !menu"
+        >
+          <div class="pt-1 h-1 w-full bg-primary rounded" />
+          <div class="pt-1 h-1 w-full bg-primary rounded" />
+          <div class="pt-1 h-1 w-full bg-primary rounded" />
+        </div>
         <ul
           :class="menu ? 'md:relative' : 'hidden z-40 md:relative'"
           class="fixed md:relative border-b-8 md:border-none border-secondary top-14 md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto bg-primary md:bg-transparent md:flex gap-16 items-center justify-center transition-all text-[20px]"
@@ -54,7 +55,7 @@
             </nuxt-link>
           </li>
         </ul>
-        <div class="flex gap-[24px]">
+        <div class="hidden md:flex gap-[24px]">
           <a href="https://app.orunla.ng/auth/login" target="_blank">
             <AppButton type="secondary">Log in</AppButton>
           </a>
@@ -69,8 +70,8 @@
       <div
         class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px]"
       >
-        <div class="py-5 flex justify-between gap-10">
-          <div class="w-1/3">
+        <div class="py-5 flex flex-col md:flex-row justify-between gap-10">
+          <div class="md:w-1/3">
             <svg
               width="167"
               height="44"
@@ -208,8 +209,8 @@
               </a>
             </div>
           </div>
-          <div class="w-2/3 flex gap-5">
-            <div class="w-1/3">
+          <div class="md:w-2/3 flex flex-col md:flex-row gap-5">
+            <div class="md:w-1/3">
               <h3 class="font-semibold mb-5">Company</h3>
               <nuxt-link
                 to="/about"
@@ -222,7 +223,7 @@
                 >FAQs</nuxt-link
               >
             </div>
-            <div class="w-1/3">
+            <div class="md:w-1/3">
               <h3 class="font-semibold mb-5">Resources</h3>
               <a
                 href="https://app.orunla.com/clubs"
@@ -258,7 +259,7 @@
                 Blog
               </a>
             </div>
-            <div class="w-1/3">
+            <div class="md:w-1/3">
               <h3 class="font-semibold mb-5">Contact</h3>
               <a
                 href="mailto:hi@orunla.ng"
@@ -276,7 +277,7 @@
           </div>
         </div>
         <div
-          class="border-t border-white flex justify-between items-center py-5"
+          class="border-t border-white flex flex-col md:flex-row justify-between items-center py-5"
         >
           <div class="flex items-center gap-5">
             <nuxt-link to="/privacy" class="hover:text-secondary/75">
@@ -292,7 +293,7 @@
               Site Map
             </nuxt-link>
           </div>
-          <div class="">
+          <div class="mt-5 text-sm md:mt-0 md:text-md">
             &copy; {{ new Date().getFullYear() }} All Rights Reserved
           </div>
         </div>

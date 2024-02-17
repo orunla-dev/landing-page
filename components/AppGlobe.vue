@@ -36,12 +36,9 @@ export default {
 <template>
   <div class="globe">
     <svg
-      width="1110"
-      height="769"
       viewBox="0 0 1110 769"
       fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-      xmlns:xlink="http://www.w3.org/1999/xlink"
+      class="w-full h-auto md:w-[1110px] md:h-[769px]"
     >
       <path
         d="M336.032 690.42C336.032 692.397 334.429 694 332.453 694C330.476 694 328.873 692.397 328.873 690.42C328.873 688.443 330.476 686.84 332.453 686.84C334.429 686.84 336.032 688.443 336.032 690.42Z"

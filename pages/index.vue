@@ -58,14 +58,14 @@
         </svg>
       </div>
       <div
-        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-start py-32 px-[20px]"
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex flex-col md:flex-row justify-between items-start py-16 md:py-32 px-[20px]"
       >
-        <div class="text-center md:text-left w-1/2 relative">
+        <div
+          class="text-center md:text-left md:w-1/2 relative order-2 md:order-1 mt-10 md:mt-0"
+        >
           <svg
-            width="52"
-            height="82"
             viewBox="0 0 52 82"
-            class="absolute -top-5 md:right-[160px] 2xl:right-[185px]"
+            class="absolute -top-5 right-7 md:right-[160px] 2xl:right-[185px] w-[24px] h-[48px] md:w-[52px] md:h-[82px]"
           >
             <path
               d="M5.36669 66.7053C4.28547 68.346 8.54276 70.4728 23.4771 75.8203C39.2898 81.4716 43.0067 82.2008 43.4798 79.9525C44.0879 76.8533 7.19124 64.0923 5.36669 66.7053Z"
@@ -81,13 +81,15 @@
             />
           </svg>
           <h1
-            class="mb-1 md:text-[52px] 2xl:text-[62px] text-[#171340] font-extrabold font-heading w-2/3"
-            style="line-height: 70px"
+            class="mb-1 mx-5 md:mx-0 text-[40px] leading-[40px] md:text-[52px] 2xl:text-[62px] md:leading-[70px] text-[#171340] font-extrabold font-heading md:w-2/3"
           >
             Reading made <span class="text-secondary/75">fun</span> and
             <span class="text-secondary/75">rewarding</span>
           </h1>
-          <svg width="276" height="21" viewBox="0 0 276 21" class="-mt-3">
+          <svg
+            viewBox="0 0 276 21"
+            class="-mt-3 inline-block w-[163px] h-[16px] md:w-[276px] md:h-[21px]"
+          >
             <path
               fill-rule="evenodd"
               clip-rule="evenodd"
@@ -96,21 +98,25 @@
             />
           </svg>
           <p
-            class="w-2/3 md:text-[25px] 2xl:text-[28px] mt-5 mb-10 text-black/75"
+            class="md:w-2/3 md:text-[25px] 2xl:text-[28px] mt-5 mb-10 mx-8 md:mx-0 text-black/75"
           >
             Level up your reading skills and unlock rewards as you progress.
           </p>
-          <div class="flex gap-5">
+          <div class="flex flex-col md:flex-row gap-5">
             <a href="">
-              <AppButton shadow>Get Started</AppButton>
+              <AppButton class="w-full md:w-auto" shadow>Get Started</AppButton>
             </a>
             <nuxt-link to="">
-              <AppButton type="secondary" shadow>Learn More</AppButton>
+              <AppButton class="w-full md:w-auto" type="secondary" shadow
+                >Learn More</AppButton
+              >
             </nuxt-link>
           </div>
         </div>
-        <div class="w-1/2 relative flex gap-10 items-center">
-          <div class="w-1/2 flex flex-col gap-10 relative">
+        <div
+          class="md:w-1/2 relative flex gap-5 md:gap-10 items-center order-1 md:order-2"
+        >
+          <div class="w-1/2 flex flex-col gap-5 md:gap-10 relative">
             <img
               src="~/assets/img/V-Books.png"
               class="w-full h-auto rounded-[16px]"
@@ -120,14 +126,11 @@
               class="w-full h-auto rounded-[16px]"
             />
             <div
-              class="absolute bottom-1/2 -left-5 rounded-full h-[56px] w-[56px] bg-secondary shadow-xl flex items-center justify-center"
+              class="absolute bottom-[55%] md:bottom-1/2 -left-4 md:-left-5 rounded-full h-[24px] w-[24px] md:h-[56px] md:w-[56px] bg-secondary shadow-xl flex items-center justify-center"
             >
               <svg
-                width="24"
-                height="19"
                 viewBox="0 0 24 19"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                class="w-[12px] h-[12px] md:w-[24px] md:h-[19px]"
               >
                 <path
                   d="M9.48 1.46875C7.78641 0.660156 5.41922 0.264062 2.25 0.25C1.95111 0.245939 1.65809 0.333095 1.41 0.499844C1.20637 0.637482 1.03968 0.82305 0.924597 1.04023C0.809512 1.2574 0.749555 1.49953 0.750002 1.74531V15.1562C0.750002 16.0628 1.395 16.7467 2.25 16.7467C5.58141 16.7467 8.92313 17.058 10.9247 18.9498C10.9521 18.9758 10.9865 18.9932 11.0237 18.9998C11.0608 19.0064 11.0991 19.002 11.1338 18.987C11.1685 18.972 11.1979 18.9472 11.2186 18.9156C11.2393 18.884 11.2502 18.847 11.25 18.8092V3.00719C11.2501 2.90057 11.2273 2.79518 11.1831 2.69814C11.139 2.6011 11.0745 2.51467 10.9941 2.44469C10.5356 2.05273 10.0263 1.72446 9.48 1.46875ZM22.59 0.498437C22.3418 0.332103 22.0488 0.245434 21.75 0.25C18.5808 0.264062 16.2136 0.658281 14.52 1.46875C13.9737 1.724 13.4643 2.05163 13.0055 2.44281C12.9252 2.51291 12.8609 2.59938 12.8168 2.6964C12.7728 2.79342 12.75 2.89875 12.75 3.00531V18.8083C12.75 18.8446 12.7607 18.88 12.7807 18.9103C12.8008 18.9405 12.8293 18.9641 12.8628 18.9782C12.8962 18.9923 12.9331 18.9961 12.9687 18.9894C13.0044 18.9826 13.0372 18.9654 13.0631 18.94C14.2664 17.7447 16.3781 16.7453 21.7519 16.7458C22.1497 16.7458 22.5312 16.5877 22.8125 16.3064C23.0938 16.0251 23.2519 15.6436 23.2519 15.2458V1.74578C23.2524 1.49951 23.1923 1.2569 23.0769 1.03935C22.9615 0.821814 22.7942 0.63604 22.59 0.498437Z"
@@ -136,7 +139,7 @@
               </svg>
             </div>
             <div
-              class="absolute bottom-10 -left-20 bg-white text-[#171340] rounded-full shadow-xl w-[204px] h-[60px] flex justify-center items-center gap-3 font-semibold"
+              class="absolute bottom-10 -left-3 md:-left-20 bg-white text-[#171340] rounded-full shadow-xl px-3 md:px-0 h-[31px] md:w-[204px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
             >
               <svg
                 width="21"
@@ -159,14 +162,11 @@
               class="w-full h-auto rounded-[16px]"
             />
             <div
-              class="absolute -bottom-7 -left-7 rounded-full h-[56px] w-[56px] bg-danger shadow-xl flex items-center justify-center"
+              class="absolute bottom-1 -left-2 md:-bottom-7 md:-left-7 rounded-full h-[27px] w-[27px] md:h-[56px] md:w-[56px] bg-danger shadow-xl flex items-center justify-center"
             >
               <svg
-                width="18"
-                height="22"
                 viewBox="0 0 18 22"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                class="h-[10.4px] w-[8px] md:h-[22px] md:w-[18px]"
               >
                 <path
                   d="M16.5 0.5H1.5C1.08516 0.5 0.75 0.835156 0.75 1.25V20.75C0.75 21.1648 1.08516 21.5 1.5 21.5H16.5C16.9148 21.5 17.25 21.1648 17.25 20.75V1.25C17.25 0.835156 16.9148 0.5 16.5 0.5ZM12.6562 7.10703L11.5664 6.3125L10.4062 7.14219V1.90625H12.6562V7.10703Z"
@@ -175,14 +175,13 @@
               </svg>
             </div>
             <div
-              class="absolute top-10 -right-20 bg-white text-[#171340] rounded-full shadow-xl w-[220px] h-[60px] flex justify-center items-center gap-3 font-semibold"
+              class="absolute top-10 -right-3 md:-right-20 bg-white text-[#171340] rounded-full shadow-xl p-3 md:px-0 w-[190px] md:w-[220px] h-[30px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
             >
               <svg
                 width="20"
                 height="20"
                 viewBox="0 0 20 20"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
+                class="w-[19px] h-[19px] md:h-[20px] md:w-[20px]"
               >
                 <path
                   d="M9 0.534998C8.39186 0.183887 7.702 -0.000939679 6.99977 -0.000900262C6.29755 -0.000860846 5.60771 0.184043 4.99961 0.535223C4.39151 0.886402 3.88657 1.39148 3.53556 1.99968C3.18455 2.60789 2.99984 3.29778 3 4V5.774C2.149 6.116 1.451 6.648 0.941 7.349C0.292 8.242 0 9.335 0 10.5C0 12.061 0.795 13.436 2 14.242V15.5C1.99994 16.3149 2.22117 17.1146 2.64008 17.8136C3.05899 18.5126 3.65985 19.0847 4.37853 19.4689C5.09721 19.8531 5.90672 20.0349 6.72066 19.9949C7.5346 19.955 8.32241 19.6947 9 19.242V15.5C9 14.167 8.67 13.315 8.14 12.74C7.597 12.153 6.716 11.716 5.336 11.486L5.664 9.514C6.966 9.73 8.106 10.137 9 10.827V0.534998ZM11 0.534998V10.827C11.894 10.137 13.034 9.73 14.336 9.514L14.664 11.486C13.284 11.716 12.403 12.153 11.86 12.741C11.33 13.315 11 14.167 11 15.5V19.242C11.6776 19.6947 12.4654 19.955 13.2793 19.9949C14.0933 20.0349 14.9028 19.8531 15.6215 19.4689C16.3401 19.0847 16.941 18.5126 17.3599 17.8136C17.7788 17.1146 18.0001 16.3149 18 15.5V14.242C19.205 13.436 20 12.062 20 10.5C20 9.335 19.708 8.242 19.059 7.35C18.549 6.648 17.851 6.116 17 5.774V4C17.0002 3.29778 16.8154 2.60789 16.4644 1.99968C16.1134 1.39148 15.6085 0.886402 15.0004 0.535223C14.3923 0.184043 13.7024 -0.000860846 13.0002 -0.000900262C12.298 -0.000939679 11.6081 0.183887 11 0.534998Z"
@@ -195,7 +194,7 @@
         </div>
       </div>
     </section>
-    <section class="relative pt-[250px]">
+    <section class="relative pt-[100px] md:pt-[150px]">
       <div class="absolute top-0 left-0">
         <svg
           width="472"
@@ -266,9 +265,11 @@
             help you become one
           </p>
         </div>
-        <div class="flex justify-center gap-10 relative">
+        <div
+          class="flex flex-col md:flex-row justify-center gap-10 px-10 md:px-0 relative"
+        >
           <div
-            class="rounded-[24px] h-[439px] bg-white shadow-lg w-1/2 p-10 text-center"
+            class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
           >
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
@@ -299,7 +300,7 @@
             </p>
           </div>
           <div
-            class="rounded-[24px] h-[439px] bg-white shadow-lg w-1/2 p-10 text-center"
+            class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
           >
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
@@ -332,7 +333,7 @@
             </p>
           </div>
           <div
-            class="rounded-[24px] h-[439px] bg-white shadow-lg w-1/2 p-10 text-center"
+            class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
           >
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
@@ -360,7 +361,41 @@
               reads for you.
             </p>
           </div>
-          <div class="absolute top-[90px] md:left-[320px] 2xl:left-[400px]">
+          <div class="md:hidden absolute top-1/3 -mt-16 right-14">
+            <svg
+              width="37"
+              height="88"
+              viewBox="0 0 37 88"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M5.54511 86.1865C7.82981 85.0005 14.1128 82.9323 16.5522 82.5397C18.2081 82.2851 18.7017 82.1376 18.8402 81.8564C19.5642 80.5609 16.2502 80.5192 11.3869 81.7316L8.29401 82.5113L9.49209 81.5779C14.1374 77.96 16.0301 75.4759 14.2706 75.2338C12.4222 74.9703 12.0733 75.1463 9.51397 77.4457C8.18906 78.6329 7.05652 79.6428 7.01167 79.6562C6.96681 79.6696 7.07688 79.085 7.27878 78.3291C8.32389 74.4191 7.41298 72.0767 5.51107 73.748C4.85441 74.3279 3.89293 76.5099 2.96311 79.498C2.57401 80.7895 1.69146 82.924 1.03399 84.2477C-0.974019 88.3493 0.322913 88.8974 5.54511 86.1865ZM19.6227 72.0764C21.2075 70.6917 24.207 66.7017 24.0933 66.136C23.6882 64.2662 20.6918 65.281 18.7743 67.9164C18.055 68.9227 16.9149 70.4144 16.2319 71.242C14.0113 73.9919 16.6798 74.6343 19.6227 72.0764ZM27.1885 62.4293C28.7671 60.7346 30.7081 55.9575 30.1738 55.1816C29.2241 53.8582 27.1057 55.1144 26.2416 57.4832L24.9225 61.0672C24.5033 62.1518 24.2977 63.1487 24.4183 63.2806C24.7586 63.6347 26.5752 63.0922 27.1885 62.4293ZM31.1173 51.3259C32.3912 49.8422 31.0678 43.3294 29.2674 42.1641C26.9697 40.6915 26.4706 44.6543 28.1237 51.5003C28.3108 52.3559 30.3439 52.2285 31.1173 51.3259ZM23.4779 50.9928C26.0596 49.3823 26.3798 48.9029 25.1919 48.5141C24.2925 48.2311 22.8237 48.6457 21.7719 49.5115C20.2002 50.7724 14.627 51.7171 14.5256 52.4669C14.3446 54.0081 20.2194 53.0453 23.4779 50.9928ZM11.8443 51.9485C11.825 51.7623 11.477 51.1947 11.0385 50.702C9.46162 48.8222 8.57244 45.1301 9.19903 42.9522C9.67245 41.2757 9.60905 41.0548 8.73741 41.1232C5.03975 41.3399 4.56141 47.4792 7.93864 51.2199C9.14507 52.5387 11.9486 53.0926 11.8443 51.9485ZM34.3116 38.7149C36.2777 37.2163 36.9442 29.1019 35.1298 28.8042C33.4933 28.5494 32.6672 29.9474 32.0095 34.0535C31.7248 35.7936 31.4161 37.6367 31.2962 38.1522C30.9829 39.589 32.7632 39.9208 34.3116 38.7149ZM26.8615 39.0928C27.8106 37.682 23.5577 35.642 19.2638 35.4612C16.5646 35.3557 10.7622 37.3524 10.8689 38.3519C10.9554 39.2135 11.882 39.2007 14.7204 38.2811C17.8056 37.2878 19.2003 37.327 21.4021 38.5164C24.5002 40.1817 26.0377 40.3462 26.8615 39.0928ZM35.9414 23.4529C37.1673 22.1753 35.0587 13.8103 33.3813 13.3278C30.7703 12.5964 30.3804 14.6317 32.1519 19.6674C33.8067 24.3302 34.4656 24.9969 35.9414 23.4529ZM31.3373 9.2609C32.3351 8.29134 28.2528 0.515728 26.5737 0.12966C23.4933 -0.557488 23.4375 1.52197 26.3537 6.16786C29.0418 10.4261 29.7046 10.8518 31.3373 9.2609Z"
+                fill="#A8A4CE"
+              />
+            </svg>
+          </div>
+          <div class="md:hidden absolute bottomom-1/3 mt-[400px] left-14">
+            <svg
+              width="59"
+              height="75"
+              viewBox="0 0 59 75"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M53.5718 73.3942C51.0215 73.1634 44.4547 73.6381 42.0588 74.2039C40.4369 74.599 39.9266 74.6503 39.6937 74.4417C38.5413 73.5136 41.581 72.2103 46.5185 71.4818L49.6618 71.0264L48.2079 70.6158C42.571 69.0249 39.8962 67.4378 41.4277 66.5414C43.0332 65.5911 43.4208 65.6217 46.641 66.7827C48.3069 67.3808 49.729 67.8875 49.7754 67.8828C49.8217 67.8782 49.5014 67.3767 49.0324 66.7511C46.6053 63.5149 46.5683 60.9897 48.9474 61.8177C49.7698 62.1063 51.473 63.7679 53.4487 66.1909C54.2908 67.2431 55.9035 68.8907 57.0051 69.8704C60.3916 72.9173 59.401 73.9217 53.5718 73.3942ZM35.3115 65.6483C33.3321 64.9657 29.0733 62.401 28.9663 61.8317C28.6399 59.9388 31.7823 59.7389 34.5365 61.4572C35.5764 62.1183 37.1859 63.07 38.1253 63.5788C41.2019 65.2879 38.9822 66.9033 35.3115 65.6483ZM24.7253 59.5668C22.6356 58.5937 19.058 54.8932 19.2602 53.9681C19.6404 52.3753 22.0637 52.7349 23.7469 54.6073L26.3046 57.4359C27.0971 58.2842 27.6597 59.1325 27.5979 59.3011C27.4167 59.7602 25.5389 59.949 24.7253 59.5668ZM16.9471 50.7437C15.2173 49.8504 13.9997 43.2908 15.2233 41.5205C16.7905 39.2748 18.7339 42.7683 19.7723 49.7635C19.9201 50.6303 17.998 51.2876 16.9471 50.7437ZM23.8656 47.519C20.8825 47.0069 20.4079 46.6834 21.3575 45.8687C22.0808 45.2623 23.5901 45.0874 24.884 45.4909C26.8049 46.0634 32.2967 44.8151 32.6708 45.4735C33.4146 46.8372 27.6379 48.1837 23.8656 47.519ZM34.9488 43.9683C34.897 43.7879 35.0053 43.1274 35.2252 42.5021C35.9754 40.1529 35.4131 36.3812 34.0202 34.5956C32.9563 33.2177 32.932 32.9881 33.7612 32.7191C37.2514 31.5097 39.9904 37.0346 38.2769 41.8008C37.6583 43.4871 35.2809 45.0718 34.9488 43.9683ZM9.28174 40.2386C6.90819 39.5957 3.25653 32.3064 4.81788 31.3374C6.23126 30.476 7.51617 31.4605 9.65941 35.0268C10.5732 36.5358 11.5477 38.1315 11.8512 38.565C12.6778 39.7811 11.1607 40.7689 9.28174 40.2386ZM16.2918 37.7472C14.8888 36.7978 18.0461 33.2786 21.9372 31.472C24.3862 30.3441 30.4831 29.9862 30.7589 30.9561C31.0016 31.7902 30.1425 32.1318 27.1814 32.3599C23.9653 32.6137 22.6941 33.1824 21.1094 35.1282C18.8764 37.8585 17.5204 38.5981 16.2918 37.7472ZM2.06658 26.6722C0.458145 25.9523 -0.728952 17.3711 0.637005 16.2825C2.77041 14.6063 3.89172 16.3497 4.14333 21.7071C4.363 26.6733 4.00509 27.5445 2.06658 26.6722ZM0.999119 11.7219C-0.283667 11.2012 0.569565 2.41491 1.97304 1.41533C4.55582 -0.398882 5.38563 1.51299 4.43601 6.94478C3.55163 11.9292 3.09993 12.5779 0.999119 11.7219Z"
+                fill="#A8A4CE"
+              />
+            </svg>
+          </div>
+          <div
+            class="hidden md:inline-block absolute md:top-[90px] md:left-[320px] 2xl:left-[400px]"
+          >
             <svg
               width="91"
               height="112"
@@ -375,7 +410,9 @@
               />
             </svg>
           </div>
-          <div class="absolute top-[90px] md:right-[320px] 2xl:right-[400px]">
+          <div
+            class="hidden md:inline-block absolute md:top-[90px] md:right-[320px] 2xl:right-[400px]"
+          >
             <svg
               width="91"
               height="112"
@@ -395,9 +432,9 @@
     </section>
     <section class="relative pt-[150px] pb-[100px]">
       <div
-        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex items-end gap-20"
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-end gap-20"
       >
-        <div class="w-1/3 pb-32">
+        <div class="md:w-1/3 md:pb-32 text-center md:text-left">
           <h2
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340]"
           >
@@ -408,10 +445,10 @@
             you might want to try
           </p>
         </div>
-        <div class="w-2/3">
+        <div class="md:w-2/3">
           <div
             ref="books"
-            class="overflow-x-auto py-5 scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
+            class="overflow-x-auto py-5 scrollbar-thin md:scrollbar-thumb-transparent md:scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
           >
             <BookCard v-for="(book, i) in books" :key="i" :data="book" />
           </div>
@@ -580,12 +617,12 @@
         </svg>
       </div>
       <div
-        class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex items-center justify-end gap-20"
+        class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-center justify-end gap-20"
       >
-        <div class="absolute top-0 -left-[650px]">
+        <div class="md:absolute md:top-0 md:-left-[650px]">
           <AppGlobe />
         </div>
-        <div class="w-1/2">
+        <div class="md:w-1/2">
           <h2
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340] w-1/2"
           >
@@ -732,11 +769,11 @@ export default {
   },
   methods: {
     changeScroll(position) {
-      if (position === 'right') {
-        this.$refs.books.scrollLeft += 430
-      } else {
-        this.$refs.books.scrollLeft = 0
-      }
+      // if (position === 'right') {
+      //   this.$refs.books.scrollLeft += 430
+      // } else {
+      //   this.$refs.books.scrollLeft = 0
+      // }
       this.scroll = position
     },
   },
