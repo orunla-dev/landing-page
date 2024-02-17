@@ -644,7 +644,7 @@
       <div
         class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative"
       >
-        <div class="bg-[#EEF9F3] rounded-[16px] py-32 text-center">
+        <div class="bg-[#EEF9F3] rounded-[16px] py-32 px-10 text-center">
           <h3
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340] relative inline-block"
           >
@@ -669,7 +669,7 @@
               />
             </svg>
           </h3>
-          <div class="text-[20px] text-black/75 mt-5 mx-auto px-[20px] w-1/2">
+          <div class="text-[18px] md:text-[20px] text-black/75 mt-5 mx-auto px-[20px] md:w-1/2">
             Become part of book loving communties where you can share book
             reviews, engage in book-related discussions, and participate in
             reading challenges.
@@ -685,7 +685,7 @@
                 width="16"
                 height="16"
                 viewBox="0 0 16 16"
-                class="h-[30px] w-auto text-[#7F79B8] group-focus-within:text-primary"
+                class="h-[30px] w-auto text-[#7F79B8] group-focus-within:text-primary hidden md:inline-block"
               >
                 <path
                   d="M14.6667 5.02344V11.3334C14.6667 11.8436 14.4718 12.3344 14.1218 12.7056C13.7718 13.0768 13.2933 13.3002 12.784 13.3301L12.6667 13.3334H3.33333C2.82319 13.3335 2.33232 13.1386 1.96115 12.7886C1.58999 12.4386 1.36659 11.96 1.33666 11.4508L1.33333 11.3334V5.02344L7.62999 9.22144L7.70733 9.26544C7.79847 9.30997 7.89856 9.33311 8 9.33311C8.10143 9.33311 8.20153 9.30997 8.29266 9.26544L8.37 9.22144L14.6667 5.02344Z"
