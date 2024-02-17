@@ -1,5 +1,9 @@
 <template>
   <div class="min-h-screen">
+    <div class="text-center bg-secondary text-white p-3">
+      ⚠️ &nbsp;Orunla is in stealth mode, we are making the application even
+      better for you.
+    </div>
     <header
       class="sticky top-0 z-50 flex justify-between items-center w-full bg-white/50 backdrop-blur"
     >
@@ -61,8 +65,10 @@
       </div>
     </header>
     <nuxt-child />
-    <footer class="bg-[#171340] text-white">
-      <div class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px]">
+    <footer class="bg-[#171340] text-white relative">
+      <div
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px]"
+      >
         <div class="py-5 flex justify-between gap-10">
           <div class="w-1/3">
             <svg

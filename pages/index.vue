@@ -1,6 +1,6 @@
 <template>
   <div class="bg-white">
-    <section class="h-[90vh] md:h-[90vh] 2xl:h-[80vh] relative">
+    <section class="relative">
       <div class="absolute top-0 right-0">
         <svg
           width="422"
@@ -195,7 +195,7 @@
         </div>
       </div>
     </section>
-    <section class="md:min-h-screen relative pt-[250px]">
+    <section class="relative pt-[250px]">
       <div class="absolute top-0 left-0">
         <svg
           width="472"
@@ -304,9 +304,21 @@
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M22 7.53497V17C22 17.7652 21.7077 18.5015 21.1827 19.0582C20.6578 19.615 19.9399 19.9501 19.176 19.995L19 20H5C4.23479 20 3.49849 19.7076 2.94174 19.1827C2.38499 18.6577 2.04989 17.9399 2.005 17.176L2 17V7.53497L11.445 13.832L11.561 13.898C11.6977 13.9648 11.8478 13.9995 12 13.9995C12.1522 13.9995 12.3023 13.9648 12.439 13.898L12.555 13.832L22 7.53497Z" fill="white"/>
-                <path d="M19 4C20.08 4 21.027 4.57 21.555 5.427L12 11.797L2.44501 5.427C2.69574 5.01977 3.04022 4.6784 3.44971 4.43138C3.85921 4.18436 4.32184 4.03886 4.79901 4.007L5.00001 4H19Z" fill="white"/>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M22 7.53497V17C22 17.7652 21.7077 18.5015 21.1827 19.0582C20.6578 19.615 19.9399 19.9501 19.176 19.995L19 20H5C4.23479 20 3.49849 19.7076 2.94174 19.1827C2.38499 18.6577 2.04989 17.9399 2.005 17.176L2 17V7.53497L11.445 13.832L11.561 13.898C11.6977 13.9648 11.8478 13.9995 12 13.9995C12.1522 13.9995 12.3023 13.9648 12.439 13.898L12.555 13.832L22 7.53497Z"
+                  fill="white"
+                />
+                <path
+                  d="M19 4C20.08 4 21.027 4.57 21.555 5.427L12 11.797L2.44501 5.427C2.69574 5.01977 3.04022 4.6784 3.44971 4.43138C3.85921 4.18436 4.32184 4.03886 4.79901 4.007L5.00001 4H19Z"
+                  fill="white"
+                />
               </svg>
             </div>
             <h3
@@ -325,8 +337,17 @@
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
             >
-              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M9.49799 5.793C10.918 3.889 13.053 3.333 15.017 3.868C17.137 4.445 19.001 6.266 19.62 8.802C19.652 8.932 19.68 9.062 19.703 9.192C18.8094 8.8738 17.8375 8.84928 16.929 9.122C15.642 8.17 14.048 8.01 12.631 8.532C10.856 9.187 9.46999 10.848 9.14899 12.938C8.73899 15.614 10.369 18.018 12.674 20.062L13.062 20.398C12.749 20.42 12.431 20.371 12.127 20.306C11.9707 20.2726 11.8154 20.2353 11.661 20.194L11.124 20.044C6.34999 18.701 3.15399 16.6 2.23699 13.46C1.50499 10.954 2.20899 8.445 3.75699 6.885C5.19099 5.44 7.31699 4.854 9.49799 5.793ZM11.126 13.241C11.554 10.449 14.783 9.073 16.441 11.469C16.4569 11.4913 16.4809 11.5064 16.5079 11.5111C16.5348 11.5157 16.5625 11.5096 16.585 11.494C18.962 9.81 21.525 12.207 20.972 14.977C20.652 16.583 19.162 17.917 16.502 18.977L16.067 19.147L15.804 19.255C15.577 19.344 15.337 19.415 15.12 19.377C14.904 19.339 14.703 19.189 14.52 19.029L14.21 18.749C11.897 16.758 10.869 14.922 11.126 13.241Z" fill="white"/>
+              <svg
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.49799 5.793C10.918 3.889 13.053 3.333 15.017 3.868C17.137 4.445 19.001 6.266 19.62 8.802C19.652 8.932 19.68 9.062 19.703 9.192C18.8094 8.8738 17.8375 8.84928 16.929 9.122C15.642 8.17 14.048 8.01 12.631 8.532C10.856 9.187 9.46999 10.848 9.14899 12.938C8.73899 15.614 10.369 18.018 12.674 20.062L13.062 20.398C12.749 20.42 12.431 20.371 12.127 20.306C11.9707 20.2726 11.8154 20.2353 11.661 20.194L11.124 20.044C6.34999 18.701 3.15399 16.6 2.23699 13.46C1.50499 10.954 2.20899 8.445 3.75699 6.885C5.19099 5.44 7.31699 4.854 9.49799 5.793ZM11.126 13.241C11.554 10.449 14.783 9.073 16.441 11.469C16.4569 11.4913 16.4809 11.5064 16.5079 11.5111C16.5348 11.5157 16.5625 11.5096 16.585 11.494C18.962 9.81 21.525 12.207 20.972 14.977C20.652 16.583 19.162 17.917 16.502 18.977L16.067 19.147L15.804 19.255C15.577 19.344 15.337 19.415 15.12 19.377C14.904 19.339 14.703 19.189 14.52 19.029L14.21 18.749C11.897 16.758 10.869 14.922 11.126 13.241Z"
+                  fill="white"
+                />
               </svg>
             </div>
             <h3
@@ -372,17 +393,319 @@
         </div>
       </div>
     </section>
+    <section class="relative pt-[150px] pb-[100px]">
+      <div
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex items-end gap-20"
+      >
+        <div class="w-1/3 pb-32">
+          <h2
+            class="text-2xl md:text-3xl font-bold font-heading text-[#171340]"
+          >
+            Trending Books
+          </h2>
+          <p class="text-[20px] text-black/75 mt-5">
+            Interesting African books Orunlans are reading at the moment that
+            you might want to try
+          </p>
+        </div>
+        <div class="w-2/3">
+          <div
+            ref="books"
+            class="overflow-x-auto py-5 scrollbar-thin scrollbar-thumb-transparent scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
+          >
+            <BookCard v-for="(book, i) in books" :key="i" :data="book" />
+          </div>
+          <div class="flex justify-center gap-5">
+            <button
+              class="h-[56px] w-[56px] rounded-full shadow-md flex justify-center items-center"
+              :class="{
+                'bg-primary text-white': scroll === 'left',
+                'bg-white text-primary': scroll === 'right',
+              }"
+              @click="changeScroll('left')"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M4 12C4 11.4477 4.44772 11 5 11H19C19.5523 11 20 11.4477 20 12C20 12.5523 19.5523 13 19 13H5C4.44772 13 4 12.5523 4 12Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M12.7071 4.29289C13.0976 4.68342 13.0976 5.31658 12.7071 5.70711L6.41421 12L12.7071 18.2929C13.0976 18.6834 13.0976 19.3166 12.7071 19.7071C12.3166 20.0976 11.6834 20.0976 11.2929 19.7071L4.29289 12.7071C3.90237 12.3166 3.90237 11.6834 4.29289 11.2929L11.2929 4.29289C11.6834 3.90237 12.3166 3.90237 12.7071 4.29289Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+            <button
+              class="h-[56px] w-[56px] rounded-full shadow-md flex justify-center items-center"
+              :class="{
+                'bg-primary text-white': scroll === 'right',
+                'bg-white text-primary': scroll === 'left',
+              }"
+              @click="changeScroll('right')"
+            >
+              <svg width="24" height="24" viewBox="0 0 24 24">
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M20 12C20 11.4477 19.5523 11 19 11H5C4.44771 11 4 11.4477 4 12C4 12.5523 4.44771 13 5 13H19C19.5523 13 20 12.5523 20 12Z"
+                  fill="currentColor"
+                />
+                <path
+                  fill-rule="evenodd"
+                  clip-rule="evenodd"
+                  d="M11.2929 4.29289C10.9024 4.68342 10.9024 5.31658 11.2929 5.70711L17.5858 12L11.2929 18.2929C10.9024 18.6834 10.9024 19.3166 11.2929 19.7071C11.6834 20.0976 12.3166 20.0976 12.7071 19.7071L19.7071 12.7071C20.0976 12.3166 20.0976 11.6834 19.7071 11.2929L12.7071 4.29289C12.3166 3.90237 11.6834 3.90237 11.2929 4.29289Z"
+                  fill="currentColor"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="relative mb-[200px]">
+      <div class="absolute top-0 right-0">
+        <svg
+          width="422"
+          height="819"
+          viewBox="0 0 422 819"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_29_259)">
+            <circle
+              cx="429.5"
+              cy="389.5"
+              r="389.5"
+              fill="url(#paint0_radial_29_259)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_29_259"
+              x="0"
+              y="-40"
+              width="859"
+              height="859"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="20"
+                result="effect1_foregroundBlur_29_259"
+              />
+            </filter>
+            <radialGradient
+              id="paint0_radial_29_259"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(429.5 389.5) rotate(90) scale(389.5)"
+            >
+              <stop
+                offset="0.325503"
+                stop-color="#BEFFDA"
+                stop-opacity="0.47"
+              />
+              <stop offset="1" stop-color="#B5E3C9" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+      <div class="absolute top-0 left-0">
+        <svg
+          width="472"
+          height="859"
+          viewBox="0 0 472 859"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <g filter="url(#filter0_f_40_9117)">
+            <circle
+              cx="42.5"
+              cy="429.5"
+              r="389.5"
+              fill="url(#paint0_radial_40_9117)"
+            />
+          </g>
+          <defs>
+            <filter
+              id="filter0_f_40_9117"
+              x="-387"
+              y="0"
+              width="859"
+              height="859"
+              filterUnits="userSpaceOnUse"
+              color-interpolation-filters="sRGB"
+            >
+              <feFlood flood-opacity="0" result="BackgroundImageFix" />
+              <feBlend
+                mode="normal"
+                in="SourceGraphic"
+                in2="BackgroundImageFix"
+                result="shape"
+              />
+              <feGaussianBlur
+                stdDeviation="20"
+                result="effect1_foregroundBlur_40_9117"
+              />
+            </filter>
+            <radialGradient
+              id="paint0_radial_40_9117"
+              cx="0"
+              cy="0"
+              r="1"
+              gradientUnits="userSpaceOnUse"
+              gradientTransform="translate(42.5 429.5) rotate(90) scale(389.5)"
+            >
+              <stop
+                offset="0.325503"
+                stop-color="#BEFFDA"
+                stop-opacity="0.47"
+              />
+              <stop offset="1" stop-color="#B5E3C9" stop-opacity="0" />
+            </radialGradient>
+          </defs>
+        </svg>
+      </div>
+      <div
+        class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex items-center justify-end gap-20"
+      >
+        <div class="absolute top-0 -left-[650px]">
+          <AppGlobe />
+        </div>
+        <div class="w-1/2">
+          <h2
+            class="text-2xl md:text-3xl font-bold font-heading text-[#171340] w-1/2"
+          >
+            Join book loving clubs or create yours
+          </h2>
+          <p class="text-[20px] text-black/75 mt-5 w-2/3">
+            Become part of book loving communties where you can share book
+            reviews, engage in book-related discussions, and participate in
+            reading challenges.
+          </p>
+          <div class="mt-10" />
+          <a href="" class="inline-block">
+            <AppButton shadow>Explore Clubs</AppButton>
+          </a>
+        </div>
+      </div>
+    </section>
+    <section class="pb-[100px]">
+      <div
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative"
+      >
+        <div class="bg-[#EEF9F3] rounded-[16px] py-32 text-center">
+          <h3
+            class="text-2xl md:text-3xl font-bold font-heading text-[#171340] relative inline-block"
+          >
+            Subscribe to our Newsletter
+            <svg
+              width="52"
+              height="72"
+              viewBox="0 0 52 72"
+              class="absolute -top-10 md:-right-12"
+            >
+              <path
+                d="M16.6077 60.0322C16.1074 61.438 19.4429 61.8972 30.8078 62.0328C42.8395 62.1689 45.5724 61.7826 45.5479 60.0991C45.4833 57.7891 17.4768 57.7685 16.6077 60.0322Z"
+                fill="#CECCE4"
+              />
+              <path
+                d="M20.8156 6.76521C16.3701 6.34194 15.593 7.03126 10.0626 16.2794C4.34066 25.8274 3.62529 27.7101 5.273 28.5878C8.26966 30.1665 10.5714 27.9685 18.2203 16.3988C23.8588 7.8607 24.0968 7.07761 20.8156 6.76521Z"
+                fill="#CECCE4"
+              />
+              <path
+                d="M41.4112 25.261C38.2618 24.9243 36.9413 25.42 32.2054 28.6721C18.1881 38.3636 7.52584 44.3638 13.6911 44.9007C16.203 45.1362 18.9658 43.5575 35.6806 32.6735C44.8969 26.6203 45.6169 25.7379 41.4112 25.261Z"
+                fill="#CECCE4"
+              />
+            </svg>
+          </h3>
+          <div class="text-[20px] text-black/75 mt-5 mx-auto px-[20px] w-1/2">
+            Become part of book loving communties where you can share book
+            reviews, engage in book-related discussions, and participate in
+            reading challenges.
+            <p class="text-primary mt-1 text-md">
+              Don't worry, we don't spam😉
+            </p>
+          </div>
+          <form action="" class="mt-10" @sumbit.prevent="">
+            <div
+              class="group inline-flex items-center gap-5 border border-primary/50 focus-within:border-primary/75 bg-white my-0 mx-auto px-5 py-3 rounded-[8px]"
+            >
+              <svg
+                width="16"
+                height="16"
+                viewBox="0 0 16 16"
+                class="h-[30px] w-auto text-[#7F79B8] group-focus-within:text-primary"
+              >
+                <path
+                  d="M14.6667 5.02344V11.3334C14.6667 11.8436 14.4718 12.3344 14.1218 12.7056C13.7718 13.0768 13.2933 13.3002 12.784 13.3301L12.6667 13.3334H3.33333C2.82319 13.3335 2.33232 13.1386 1.96115 12.7886C1.58999 12.4386 1.36659 11.96 1.33666 11.4508L1.33333 11.3334V5.02344L7.62999 9.22144L7.70733 9.26544C7.79847 9.30997 7.89856 9.33311 8 9.33311C8.10143 9.33311 8.20153 9.30997 8.29266 9.26544L8.37 9.22144L14.6667 5.02344Z"
+                  fill="currentColor"
+                />
+                <path
+                  d="M12.6667 2.66675C13.3867 2.66675 14.018 3.04675 14.37 3.61808L8.00001 7.86475L1.63 3.61808C1.79716 3.34659 2.02681 3.11902 2.29981 2.95434C2.57281 2.78966 2.88123 2.69265 3.19934 2.67141L3.33334 2.66675H12.6667Z"
+                  fill="currentColor"
+                />
+              </svg>
+              <input
+                type="email"
+                class="w-[500px] bg-transparent outline-none hover:outline-none focus:outline-none placeholder:font-semibold placeholder:text-primary/50"
+                placeholder="Your Email"
+              />
+              <AppButton>Submit</AppButton>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
   </div>
 </template>
 
 <script>
+import ArrowOfGod from '~/assets/img/arrow-of-god.jpg'
+import DeepWorks from '~/assets/img/deep-work-cover.jpg'
+import Americanah from '~/assets/img/americanah.jpg'
+import RDPD from '~/assets/img/rich-dad-poor-dad.jpg'
+
 export default {
   name: 'IndexPage',
   data() {
     return {
+      scroll: 'right',
       title: 'Discover the new way to read with friends on Orunla',
       description:
         'Reading made fun and rewarding. Level up your reading skills and unlock rewards as you progress.',
+      books: [
+        {
+          img: ArrowOfGod,
+          about: `Arrow of God, the second novel in Chinua Achebe's The African
+              Trilogy, moves the historical narrative forward.`,
+        },
+        {
+          img: DeepWorks,
+          about: `Deep work is the ability to focus without distraction on a cognitively demanding task. It's a skill that allows you to quickly master complicated information and produce better results in less time. `,
+        },
+        {
+          img: Americanah,
+          about: `Ifemelu and Obinze are young and in love when they depart military-ruled Nigeria for the West. Beautiful, self-assured Ifemelu heads for America, where despite her academic success, she is forced to grapple with what it means to be Black for the first time.`,
+        },
+        {
+          img: RDPD,
+          about: `Rich Dad Poor Dad is Robert's story of growing up with two dads his real father and the father of his best friend, his rich dad and the ways in which both men shaped his thoughts about money and investing. `,
+        },
+      ],
     }
   },
   head() {
@@ -406,6 +729,16 @@ export default {
         },
       ],
     }
+  },
+  methods: {
+    changeScroll(position) {
+      if (position === 'right') {
+        this.$refs.books.scrollLeft += 430
+      } else {
+        this.$refs.books.scrollLeft = 0
+      }
+      this.scroll = position
+    },
   },
 }
 </script>
