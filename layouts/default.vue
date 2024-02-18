@@ -8,7 +8,7 @@
       class="sticky top-0 z-50 flex justify-between items-center w-full bg-white/50 backdrop-blur"
     >
       <div
-        class="w-full md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px]"
+        class="w-full md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px] relative"
       >
         <nuxt-link to="/">
           <img
@@ -16,23 +16,27 @@
             class="w-24 md:w-[167px] h-auto"
           />
         </nuxt-link>
-        <div
-          class="md:hidden w-12 h-8 flex flex-col items-center justify-center gap-2"
-          @click="menu = !menu"
-        >
-          <div class="pt-1 h-1 w-full bg-primary rounded" />
-          <div class="pt-1 h-1 w-full bg-primary rounded" />
-          <div class="pt-1 h-1 w-full bg-primary rounded" />
+        <div class="md:hidden">
+          <div
+            id="menu"
+            ref="hamburger"
+            class="hamburger"
+            @click="toggleMenu()"
+          >
+            <div class="hamburger__line" />
+            <div class="hamburger__line" />
+            <div class="hamburger__line" />
+          </div>
         </div>
         <ul
-          :class="menu ? 'md:relative' : 'hidden z-40 md:relative'"
-          class="fixed md:relative border-b-8 md:border-none border-secondary top-14 md:top-auto bottom-0 md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto bg-primary md:bg-transparent md:flex gap-16 items-center justify-center transition-all text-[20px]"
+          :class="menu ? 'md:relative' : 'z-40 md:relative'"
+          class="fixed bg-secondary -translate-x-[100%] md:translate-x-0 md:bg-transparent h-screen md:h-auto md:relative border-b-8 md:border-none border-secondary top-[75px] bottom-0 md:top-auto md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto md:flex gap-16 items-center justify-center text-[20px] p-[10px] md:p-0"
         >
           <li class="w-full">
             <a
               href="https://app.orunla.ng/books"
               target="_blank"
-              class="text-primary/75 font-semibold hover:text-primary"
+              class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
             >
               Books
             </a>
@@ -41,7 +45,7 @@
             <a
               href="https://app.orunla.ng/clubs"
               target="_blank"
-              class="text-primary/75 font-semibold hover:text-primary"
+              class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
             >
               Clubs
             </a>
@@ -49,7 +53,7 @@
           <li class="w-full">
             <nuxt-link
               to="/about"
-              class="text-primary/75 font-semibold hover:text-primary"
+              class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
             >
               About
             </nuxt-link>
@@ -303,6 +307,7 @@
 </template>
 
 <script>
+import gsap from 'gsap'
 import AppButton from '~/components/AppButton.vue'
 
 export default {
@@ -318,12 +323,62 @@ export default {
       this.menu = false
     },
   },
+  methods: {
+    toggleMenu() {
+      const hamburger = this.$refs.hamburger;
+      if (!this.menu) {
+        gsap.to(
+          'ul',
+          {
+            translateX: 0,
+            autoAlpha: 1,
+            ease: 'circ.in',
+          },
+          .5
+        )
+        hamburger.classList.add('hamburger--active');
+      } else {
+        gsap.to(
+          'ul',
+          {
+            autoAlpha: 0,
+            translateX: '-100%',
+            ease: 'circ.in',
+          },
+          .6
+        )
+        hamburger.classList.remove("hamburger--active");
+      }
+
+      this.menu = !this.menu
+    },
+  },
 }
 </script>
 
 <style>
-#menu:checked ~ ul {
+.hamburger {
   display: block;
-  z-index: 40;
+  cursor: pointer;
+  padding: 1rem;
+}
+
+.hamburger__line {
+  margin: 3px 0 0;
+  padding: 1.5px 15px;
+  background-color: #342B8E;
+  transition: all linear .3s;
+}
+
+.hamburger--active .hamburger__line:first-of-type {
+  transform: rotate(45deg) translate(1px, 1px);
+}
+
+.hamburger--active .hamburger__line:nth-of-type(even) {
+  display: none
+}
+
+.hamburger--active .hamburger__line:last-of-type {
+  transform: rotate(-45deg) translate(3px, -4px);
 }
 </style>
