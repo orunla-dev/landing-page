@@ -30,7 +30,7 @@
         </div>
         <ul
           :class="menu ? 'md:relative' : 'z-40 md:relative'"
-          class="fixed bg-secondary -translate-x-[100%] md:translate-x-0 md:bg-transparent h-screen md:h-auto md:relative border-b-8 md:border-none border-secondary top-[75px] bottom-0 md:top-auto md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto md:flex gap-16 items-center justify-center text-[20px] p-[10px] md:p-0"
+          class="fixed bg-secondary -translate-x-[100%] md:translate-x-0 md:bg-transparent h-screen md:h-auto md:relative border-b-8 md:border-none border-secondary top-[100px] bottom-0 md:top-auto md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto md:flex gap-16 items-center justify-center text-[20px] p-[10px] md:p-0"
         >
           <li class="w-full">
             <a
