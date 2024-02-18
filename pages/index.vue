@@ -120,13 +120,16 @@
             <img
               src="~/assets/img/V-Books.png"
               class="w-full h-auto rounded-[16px]"
+              data-animate="pop"
             />
             <img
               src="~/assets/img/CyanBooks.png"
               class="w-full h-auto rounded-[16px]"
+              data-animate="pop"
             />
             <div
               class="absolute bottom-[55%] md:bottom-1/2 -left-4 md:-left-5 rounded-full h-[24px] w-[24px] md:h-[56px] md:w-[56px] bg-secondary shadow-xl flex items-center justify-center"
+              data-animate="pop"
             >
               <svg
                 viewBox="0 0 24 19"
@@ -140,6 +143,7 @@
             </div>
             <div
               class="absolute bottom-10 -left-3 md:-left-20 bg-white text-[#171340] rounded-full shadow-xl px-3 md:px-0 h-[31px] md:w-[204px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
+              data-animate="pop"
             >
               <svg
                 width="21"
@@ -160,9 +164,11 @@
             <img
               src="~/assets/img/ScienceBooks.png"
               class="w-full h-auto rounded-[16px]"
+              data-animate="pop"
             />
             <div
               class="absolute bottom-1 -left-2 md:-bottom-7 md:-left-7 rounded-full h-[27px] w-[27px] md:h-[56px] md:w-[56px] bg-danger shadow-xl flex items-center justify-center"
+              data-animate="pop"
             >
               <svg
                 viewBox="0 0 18 22"
@@ -176,6 +182,7 @@
             </div>
             <div
               class="absolute top-10 -right-3 md:-right-20 bg-white text-[#171340] rounded-full shadow-xl p-3 md:px-0 w-[190px] md:w-[220px] h-[30px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
+              data-animate="pop"            
             >
               <svg
                 width="20"
@@ -709,10 +716,17 @@
 </template>
 
 <script>
+import gsap from 'gsap'
+
+import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
+import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'
+
 import ArrowOfGod from '~/assets/img/arrow-of-god.jpg'
 import DeepWorks from '~/assets/img/deep-work-cover.jpg'
 import Americanah from '~/assets/img/americanah.jpg'
 import RDPD from '~/assets/img/rich-dad-poor-dad.jpg'
+
+gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
 export default {
   name: 'IndexPage',
@@ -765,6 +779,9 @@ export default {
       ],
     }
   },
+  mounted() {
+    this.animate()
+  },
   methods: {
     changeScroll(position) {
       if (position === 'right') {
@@ -774,6 +791,21 @@ export default {
       }
       this.scroll = position
     },
+    animate() {
+      const popElements = gsap.utils.toArray('[data-animate="pop"]');
+      popElements.forEach((el, i) => {
+        gsap.fromTo(el, {
+          scale: .9,
+          autoAlpha: .8,
+        }, {
+          autoAlpha: 1,
+          scale: 1,
+          delay: i * .08
+        },
+          .09
+        );
+      })
+    }
   },
 }
 </script>
