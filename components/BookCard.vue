@@ -18,7 +18,7 @@ export default {
       :style="`background-image: url(${data.img})`"
     >
       <div
-        class="bg-contain bg-no-repeat bg-center py-32 px-20 backdrop-blur-xl rounded-[8px]"
+        class="bg-contain bg-no-repeat bg-center py-32 px-20 backdrop-blur-xl rounded-[8px] bg-secondary/50"
         :style="`background-image: url(${data.img})`"
       ></div>
     </div>

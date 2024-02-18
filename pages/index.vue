@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-white overflow-x-hidden">
     <section class="relative">
       <div class="absolute top-0 right-0">
         <svg
@@ -266,7 +266,7 @@
           </p>
         </div>
         <div
-          class="flex flex-col md:flex-row justify-center gap-10 px-10 md:px-0 relative"
+          class="flex flex-col md:flex-row justify-center gap-10 md:px-0 relative"
         >
           <div
             class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
@@ -377,7 +377,7 @@
               />
             </svg>
           </div>
-          <div class="md:hidden absolute bottomom-1/3 mt-[400px] left-14">
+          <div class="md:hidden absolute bottomom-1/3 mt-[480px] left-14">
             <svg
               width="59"
               height="75"
@@ -430,9 +430,9 @@
         </div>
       </div>
     </section>
-    <section class="relative pt-[150px] pb-[100px]">
+    <section class="md:block relative pt-[150px] pb-[100px]">
       <div
-        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-end gap-20"
+        class="md:w-[1200px] 2xl:w-[1400px] md:mx-auto md:my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row md:items-end gap-20"
       >
         <div class="md:w-1/3 md:pb-32 text-center md:text-left">
           <h2
@@ -445,10 +445,10 @@
             you might want to try
           </p>
         </div>
-        <div class="md:w-2/3">
+        <div class="md:w-2/3 md:px-10 w-full">
           <div
             ref="books"
-            class="overflow-x-auto py-5 scrollbar-thin md:scrollbar-thumb-transparent md:scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
+            class="overflow-x-scroll py-5 scrollbar-thin md:scrollbar-thumb-transparent md:scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
           >
             <BookCard v-for="(book, i) in books" :key="i" :data="book" />
           </div>
@@ -506,11 +506,8 @@
     <section class="relative mb-[200px]">
       <div class="absolute top-0 right-0">
         <svg
-          width="422"
-          height="819"
           viewBox="0 0 422 819"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          class="w-[250px] md:w-[412px] md:h-[819px]"
         >
           <g filter="url(#filter0_f_29_259)">
             <circle
@@ -562,11 +559,8 @@
       </div>
       <div class="absolute top-0 left-0">
         <svg
-          width="472"
-          height="859"
           viewBox="0 0 472 859"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
+          class="w-[150px] md:w-[472px] md:h-[859px]"
         >
           <g filter="url(#filter0_f_40_9117)">
             <circle
@@ -619,16 +613,16 @@
       <div
         class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-center justify-end gap-20"
       >
-        <div class="md:absolute md:top-0 md:-left-[650px]">
-          <AppGlobe />
+        <div class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 mf:order-1">
+          <AppGlobe class="scale-[2] md:scale-[1]" />
         </div>
-        <div class="md:w-1/2">
+        <div class="md:w-1/2 text-center md:text-left order-1 md:order-2">
           <h2
-            class="text-2xl md:text-3xl font-bold font-heading text-[#171340] w-1/2"
+            class="text-2xl md:text-3xl font-bold font-heading text-[#171340] md:w-1/2"
           >
             Join book loving clubs or create yours
           </h2>
-          <p class="text-[20px] text-black/75 mt-5 w-2/3">
+          <p class="text-[20px] text-black/75 mt-5 md:w-2/3">
             Become part of book loving communties where you can share book
             reviews, engage in book-related discussions, and participate in
             reading challenges.
@@ -642,9 +636,11 @@
     </section>
     <section class="pb-[100px]">
       <div
-        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative"
+        class="md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[10px] md:px-[20px] relative"
       >
-        <div class="bg-[#EEF9F3] rounded-[16px] py-32 px-10 text-center">
+        <div
+          class="bg-[#EEF9F3] rounded-[16px] py-[25px] px-[10px] md:py-32 md:px-10 text-center"
+        >
           <h3
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340] relative inline-block"
           >
@@ -653,7 +649,7 @@
               width="52"
               height="72"
               viewBox="0 0 52 72"
-              class="absolute -top-10 md:-right-12"
+              class="hidden md:inline-block absolute -top-10 -right-12"
             >
               <path
                 d="M16.6077 60.0322C16.1074 61.438 19.4429 61.8972 30.8078 62.0328C42.8395 62.1689 45.5724 61.7826 45.5479 60.0991C45.4833 57.7891 17.4768 57.7685 16.6077 60.0322Z"
@@ -669,7 +665,9 @@
               />
             </svg>
           </h3>
-          <div class="text-[18px] md:text-[20px] text-black/75 mt-5 mx-auto px-[20px] md:w-1/2">
+          <div
+            class="text-[18px] md:text-[20px] text-black/75 mt-5 mx-auto px-[20px] md:w-1/2"
+          >
             Become part of book loving communties where you can share book
             reviews, engage in book-related discussions, and participate in
             reading challenges.
@@ -769,11 +767,11 @@ export default {
   },
   methods: {
     changeScroll(position) {
-      // if (position === 'right') {
-      //   this.$refs.books.scrollLeft += 430
-      // } else {
-      //   this.$refs.books.scrollLeft = 0
-      // }
+      if (position === 'right') {
+        this.$refs.books.scrollLeft += 430
+      } else {
+        this.$refs.books.scrollLeft = 0
+      }
       this.scroll = position
     },
   },
