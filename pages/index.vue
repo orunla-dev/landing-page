@@ -802,7 +802,7 @@ export default {
           scale: 1,
           delay: i * .08
         },
-          .09
+          .3
         );
       })
     }
