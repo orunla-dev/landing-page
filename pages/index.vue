@@ -82,6 +82,7 @@
           </svg>
           <h1
             class="mb-1 mx-5 md:mx-0 text-[40px] leading-[40px] md:text-[52px] 2xl:text-[62px] md:leading-[70px] text-[#171340] font-extrabold font-heading md:w-2/3"
+            data-animate="slide-in"
           >
             Reading made <span class="text-secondary/75">fun</span> and
             <span class="text-secondary/75">rewarding</span>
@@ -119,12 +120,12 @@
           <div class="w-1/2 flex flex-col gap-5 md:gap-10 relative">
             <img
               src="~/assets/img/V-Books.png"
-              class="w-full h-auto rounded-[16px]"
+              class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
             />
             <img
               src="~/assets/img/CyanBooks.png"
-              class="w-full h-auto rounded-[16px]"
+              class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
             />
             <div
@@ -163,7 +164,7 @@
           <div class="w-1/2 relative">
             <img
               src="~/assets/img/ScienceBooks.png"
-              class="w-full h-auto rounded-[16px]"
+              class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
             />
             <div
@@ -182,7 +183,7 @@
             </div>
             <div
               class="absolute top-10 -right-3 md:-right-20 bg-white text-[#171340] rounded-full shadow-xl p-3 md:px-0 w-[190px] md:w-[220px] h-[30px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
-              data-animate="pop"            
+              data-animate="pop"
             >
               <svg
                 width="20"
@@ -273,10 +274,12 @@
           </p>
         </div>
         <div
+          id="card-pop"
           class="flex flex-col md:flex-row justify-center gap-10 md:px-0 relative"
         >
           <div
             class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
+            data-animate="card-pop"
           >
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
@@ -308,6 +311,7 @@
           </div>
           <div
             class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
+            data-animate="card-pop"
           >
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
@@ -341,6 +345,7 @@
           </div>
           <div
             class="rounded-[24px] md:h-[439px] md:w-1/2 bg-white shadow-lg p-10 text-center"
+            data-animate="card-pop"
           >
             <div
               class="bg-secondary w-[64px] h-[64px] inline-flex items-center justify-center rounded-full"
@@ -441,7 +446,10 @@
       <div
         class="md:w-[1200px] 2xl:w-[1400px] md:mx-auto md:my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row md:items-end gap-20"
       >
-        <div class="md:w-1/3 md:pb-32 text-center md:text-left">
+        <div
+          class="md:w-1/3 md:pb-32 text-center md:text-left"
+          data-animate="slide-in"
+        >
           <h2
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340]"
           >
@@ -457,7 +465,12 @@
             ref="books"
             class="overflow-x-scroll py-5 scrollbar-thin md:scrollbar-thumb-transparent md:scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
           >
-            <BookCard v-for="(book, i) in books" :key="i" :data="book" />
+            <BookCard
+              v-for="(book, i) in books"
+              :key="i"
+              :data="book"
+              data-animate="slide-up"
+            />
           </div>
           <div class="flex justify-center gap-5">
             <button
@@ -512,10 +525,7 @@
     </section>
     <section class="relative mb-[200px]">
       <div class="absolute top-0 right-0">
-        <svg
-          viewBox="0 0 422 819"
-          class="w-[250px] md:w-[412px] md:h-[819px]"
-        >
+        <svg viewBox="0 0 422 819" class="w-[250px] md:w-[412px] md:h-[819px]">
           <g filter="url(#filter0_f_29_259)">
             <circle
               cx="429.5"
@@ -565,10 +575,7 @@
         </svg>
       </div>
       <div class="absolute top-0 left-0">
-        <svg
-          viewBox="0 0 472 859"
-          class="w-[150px] md:w-[472px] md:h-[859px]"
-        >
+        <svg viewBox="0 0 472 859" class="w-[150px] md:w-[472px] md:h-[859px]">
           <g filter="url(#filter0_f_40_9117)">
             <circle
               cx="42.5"
@@ -620,10 +627,15 @@
       <div
         class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-center justify-end gap-20"
       >
-        <div class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 mf:order-1">
+        <div
+          class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 mf:order-1"
+        >
           <AppGlobe class="scale-[2] md:scale-[1]" />
         </div>
-        <div class="md:w-1/2 text-center md:text-left order-1 md:order-2">
+        <div
+          class="md:w-1/2 text-center md:text-left order-1 md:order-2"
+          data-animate="slide-in"
+        >
           <h2
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340] md:w-1/2"
           >
@@ -647,6 +659,7 @@
       >
         <div
           class="bg-[#EEF9F3] rounded-[16px] py-[25px] px-[10px] md:py-32 md:px-10 text-center"
+          data-animate="slide-up"
         >
           <h3
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340] relative inline-block"
@@ -733,9 +746,9 @@ export default {
   data() {
     return {
       scroll: 'right',
-      title: 'Discover the new way to read with friends on Orunla',
+      title: 'Reading made fun and rewarding',
       description:
-        'Reading made fun and rewarding. Level up your reading skills and unlock rewards as you progress.',
+        'Level up your reading skills and unlock rewards as you progress.',
       books: [
         {
           img: ArrowOfGod,
@@ -792,20 +805,74 @@ export default {
       this.scroll = position
     },
     animate() {
-      const popElements = gsap.utils.toArray('[data-animate="pop"]');
+      const popElements = gsap.utils.toArray('[data-animate="pop"]')
+      const popCards = gsap.utils.toArray('[data-animate="card-pop"]')
+      const slideIn = gsap.utils.toArray('[data-animate="slide-in"]')
+      const slideUp = gsap.utils.toArray('[data-animate="slide-up"]')
+
       popElements.forEach((el, i) => {
-        gsap.fromTo(el, {
-          scale: .9,
-          autoAlpha: .8,
-        }, {
-          autoAlpha: 1,
-          scale: 1,
-          delay: i * .08
-        },
-          .3
-        );
+        gsap.from(
+          el,
+          {
+            scale: 0.9,
+            autoAlpha: 0.8,
+          },
+          // {
+          //   autoAlpha: 1,
+          //   scale: 1,
+          //   delay: i * 0.1,
+          // },
+          0.3
+        )
       })
-    }
+
+      popCards.forEach((el, i) => {
+        gsap.from(
+          el,
+          {
+            scrollTrigger: {
+              trigger: el,
+              scrub: i,
+            },
+            scale: 0.9,
+            delay: i * 0.1,
+          },
+          0.3
+        )
+      })
+
+      slideIn.forEach((el, i) => {
+        gsap.from(
+          el,
+          {
+            scrollTrigger: {
+              trigger: el,
+              scrub: i,
+            },
+            autoAlpha: 0.8,
+            translateX: '-100px',
+            delay: i * 0.1,
+          },
+          0.3
+        )
+      })
+
+      slideUp.forEach((el, i) => {
+        gsap.from(
+          el,
+          {
+            scrollTrigger: {
+              trigger: el,
+              scrub: i,
+            },
+            autoAlpha: 0.8,
+            translateY: '50px',
+            delay: i * 0.1,
+          },
+          0.3
+        )
+      })
+    },
   },
 }
 </script>
