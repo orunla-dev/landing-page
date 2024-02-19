@@ -82,7 +82,7 @@
           </svg>
           <h1
             class="mb-1 mx-5 md:mx-0 text-[40px] leading-[40px] md:text-[52px] 2xl:text-[62px] md:leading-[70px] text-[#171340] font-extrabold font-heading md:w-2/3"
-            data-animate="slide-in"
+            data-animate="slideIn"
           >
             Reading made <span class="text-secondary/75">fun</span> and
             <span class="text-secondary/75">rewarding</span>
@@ -809,6 +809,7 @@ export default {
       const popCards = gsap.utils.toArray('[data-animate="card-pop"]')
       const slideIn = gsap.utils.toArray('[data-animate="slide-in"]')
       const slideUp = gsap.utils.toArray('[data-animate="slide-up"]')
+      const slide = gsap.utils.toArray('[data-animate="slideIn"]')
 
       popElements.forEach((el, i) => {
         gsap.from(
@@ -817,11 +818,6 @@ export default {
             scale: 0.9,
             autoAlpha: 0.8,
           },
-          // {
-          //   autoAlpha: 1,
-          //   scale: 1,
-          //   delay: i * 0.1,
-          // },
           0.3
         )
       })
@@ -867,6 +863,22 @@ export default {
             },
             autoAlpha: 0.8,
             translateY: '50px',
+            delay: i * 0.1,
+          },
+          0.3
+        )
+      })
+
+      slide.forEach((el, i) => {
+        gsap.from(
+          el,
+          {
+            scrollTrigger: {
+              trigger: el,
+              scrub: i,
+            },
+            autoAlpha: 0.8,
+            translateX: '20px',
             delay: i * 0.1,
           },
           0.3
