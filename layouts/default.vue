@@ -8,7 +8,8 @@
       class="sticky top-0 z-50 flex justify-between items-center w-full bg-white/50 backdrop-blur"
     >
       <div
-        class="w-full md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px] relative"
+        class="w-full md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 flex justify-between items-center py-[16px] px-[20px]"
+        style="position: relative"
       >
         <nuxt-link to="/">
           <img
@@ -30,7 +31,7 @@
         </div>
         <ul
           :class="menu ? 'md:relative' : 'z-40 md:relative'"
-          class="fixed bg-secondary -translate-x-[100%] md:translate-x-0 md:bg-transparent h-screen md:h-auto md:relative border-b-8 md:border-none border-secondary top-[100px] bottom-0 md:top-auto md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto md:flex gap-16 items-center justify-center text-[20px] p-[10px] md:p-0"
+          class="fixed bg-secondary -translate-x-[100%] md:translate-x-0 md:bg-transparent h-screen md:h-auto md:relative border-b-8 md:border-none border-secondary top-[70px] bottom-0 md:top-auto md:bottom-auto right-0 md:right-auto left-0 md:left-auto z-40 md:z-auto md:flex gap-16 items-center justify-center text-[20px] p-[10px] md:p-0"
         >
           <li class="w-full">
             <a
@@ -325,7 +326,7 @@ export default {
   },
   methods: {
     toggleMenu() {
-      const hamburger = this.$refs.hamburger;
+      const hamburger = this.$refs.hamburger
       if (!this.menu) {
         gsap.to(
           'ul',
@@ -334,9 +335,10 @@ export default {
             autoAlpha: 1,
             ease: 'circ.in',
           },
-          .5
+          0.5
         )
-        hamburger.classList.add('hamburger--active');
+        hamburger.classList.add('hamburger--active')
+        // document.body.scrollIntoView({ behavior: 'smooth'})
       } else {
         gsap.to(
           'ul',
@@ -345,9 +347,9 @@ export default {
             translateX: '-100%',
             ease: 'circ.in',
           },
-          .6
+          0.6
         )
-        hamburger.classList.remove("hamburger--active");
+        hamburger.classList.remove('hamburger--active')
       }
 
       this.menu = !this.menu
@@ -366,8 +368,8 @@ export default {
 .hamburger__line {
   margin: 3px 0 0;
   padding: 1.5px 15px;
-  background-color: #342B8E;
-  transition: all linear .3s;
+  background-color: #342b8e;
+  transition: all linear 0.3s;
 }
 
 .hamburger--active .hamburger__line:first-of-type {
@@ -375,7 +377,7 @@ export default {
 }
 
 .hamburger--active .hamburger__line:nth-of-type(even) {
-  display: none
+  display: none;
 }
 
 .hamburger--active .hamburger__line:last-of-type {
