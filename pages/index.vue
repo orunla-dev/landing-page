@@ -119,12 +119,12 @@
           <div class="w-1/2 flex flex-col gap-5 md:gap-10 relative">
             <img
               src="~/assets/img/V-Books.png"
-              class="w-full h-auto rounded-[16px]"
+              class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
             />
             <img
               src="~/assets/img/CyanBooks.png"
-              class="w-full h-auto rounded-[16px]"
+              class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
             />
             <div
@@ -163,7 +163,7 @@
           <div class="w-1/2 relative">
             <img
               src="~/assets/img/ScienceBooks.png"
-              class="w-full h-auto rounded-[16px]"
+              class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
             />
             <div
@@ -182,7 +182,7 @@
             </div>
             <div
               class="absolute top-10 -right-3 md:-right-20 bg-white text-[#171340] rounded-full shadow-xl p-3 md:px-0 w-[190px] md:w-[220px] h-[30px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
-              data-animate="pop"            
+              data-animate="pop"
             >
               <svg
                 width="20"
@@ -512,10 +512,7 @@
     </section>
     <section class="relative mb-[200px]">
       <div class="absolute top-0 right-0">
-        <svg
-          viewBox="0 0 422 819"
-          class="w-[250px] md:w-[412px] md:h-[819px]"
-        >
+        <svg viewBox="0 0 422 819" class="w-[250px] md:w-[412px] md:h-[819px]">
           <g filter="url(#filter0_f_29_259)">
             <circle
               cx="429.5"
@@ -565,10 +562,7 @@
         </svg>
       </div>
       <div class="absolute top-0 left-0">
-        <svg
-          viewBox="0 0 472 859"
-          class="w-[150px] md:w-[472px] md:h-[859px]"
-        >
+        <svg viewBox="0 0 472 859" class="w-[150px] md:w-[472px] md:h-[859px]">
           <g filter="url(#filter0_f_40_9117)">
             <circle
               cx="42.5"
@@ -620,7 +614,9 @@
       <div
         class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-center justify-end gap-20"
       >
-        <div class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 mf:order-1">
+        <div
+          class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 mf:order-1"
+        >
           <AppGlobe class="scale-[2] md:scale-[1]" />
         </div>
         <div class="md:w-1/2 text-center md:text-left order-1 md:order-2">
@@ -792,20 +788,23 @@ export default {
       this.scroll = position
     },
     animate() {
-      const popElements = gsap.utils.toArray('[data-animate="pop"]');
+      const popElements = gsap.utils.toArray('[data-animate="pop"]')
       popElements.forEach((el, i) => {
-        gsap.fromTo(el, {
-          scale: .9,
-          autoAlpha: .8,
-        }, {
-          autoAlpha: 1,
-          scale: 1,
-          delay: i * .08
-        },
-          .3
-        );
+        gsap.fromTo(
+          el,
+          {
+            scale: 0.9,
+            autoAlpha: 0.8,
+          },
+          {
+            autoAlpha: 1,
+            scale: 1,
+            delay: i * 0.1,
+          },
+          0.3
+        )
       })
-    }
+    },
   },
 }
 </script>
