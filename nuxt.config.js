@@ -12,10 +12,20 @@ export default {
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      {
+        hid: 'description',
+        name: 'description',
+        content:
+          'Level up your reading skills and unlock rewards as you progress. Read books online and join reading communities',
+      },
       { name: 'format-detection', content: 'telephone=no' },
-      { hid: 'og:title', name: 'og:title', content: '' },
-      { hid: 'og:description', name: 'og:description', content: '' },
+      { hid: 'og:title', name: 'og:title', content: 'Orunla Africa' },
+      {
+        hid: 'og:description',
+        name: 'og:description',
+        content:
+          'Level up your reading skills and unlock rewards as you progress. Read books online and join reading communities',
+      },
       {
         hid: 'og:image',
         name: 'og:image',
@@ -46,6 +56,15 @@ export default {
         rel: 'stylesheet',
         href: 'https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap',
       },
+    ],
+    script: [
+      {
+        src: 'https://www.googletagmanager.com/gtag/js?id=G-L240M3DEG4',
+        async: true
+      },
+      {
+        src: 'js/ga.js'
+      }
     ],
   },
 
