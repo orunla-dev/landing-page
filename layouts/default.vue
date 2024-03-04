@@ -348,7 +348,9 @@ export default {
   },
   watch: {
     $route: function () {
-      this.menu = false
+      if (this.menu) {
+        this.toggleMenu()
+      }
     },
   },
   methods: {

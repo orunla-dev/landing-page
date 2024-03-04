@@ -25,40 +25,16 @@
           <h2
             class="text-2xl md:text-3xl font-bold font-heading text-[#171340]"
           >
-            Our Story
+            Our 'Why?'
           </h2>
           <p class="mt-3 text-justify">
-            In hac habitasse platea dictumst. Pellentesque habitant morbi
-            tristique senectus et netus et malesuada fames ac turpis egestas.
-            Curabitur at sem et nisi ornare fringilla at nec mi. Nunc sit amet
-            nunc ante. Pellentesque a purus mauris. Pellentesque maximus
-            eleifend enim, nec lobortis leo ultrices vel. Nunc diam nisl,
-            iaculis quis urna volutpat, consectetur tincidunt massa. Sed vitae
-            magna tellus.
+            Most book shelves in Africa are filled with books from outside the continent, including those about the continent. And these Western books are too pricey for
+            young adults and teens. Young Africans are forced to rely on prirated or free ebooks available online to get extra curricular knowledge.
             <br /><br />
-            Duis ex elit, aliquam a sagittis ut, imperdiet eu purus. Etiam
-            sollicitudin lorem felis, quis pharetra quam sagittis sed. Nam
-            eleifend nisi nec neque ultricies eleifend. Class aptent taciti
-            sociosqu ad litora torquent per conubia nostra, per inceptos
-            himenaeos. Phasellus aliquet lacinia magna suscipit elementum.
-            Nullam non suscipit orci. Pellentesque elit quam, commodo in
-            pellentesque in, ornare non dui. Ut ornare fringilla consequat.
-            Morbi vestibulum efficitur ipsum vel feugiat. Pellentesque gravida
-            volutpat ante, vel imperdiet orci convallis ac. Suspendisse sed orci
-            lacinia, gravida urna et, pretium libero. Sed porta velit diam, nec
-            gravida diam scelerisque a. Duis sed dapibus elit, quis elementum
-            ligula. Vestibulum convallis rutrum tortor in elementum.
+            This among other challenges facing the African literacy space is our motivation for Orunla. The continent rates the lowest in comparison to other continents' literacy score. No wonder the massive underdevelopment and poverty experienced in the continent.
+            According to Nelson Mandela: "Reading is the key that opens doors to many good things in life. Reading shaped my dreams and more reading helped me make my dreams come true". Orunla is on a mission to help young Africans shape and make their dreams come through. 
             <br /><br />
-            Phasellus molestie lectus vitae felis dignissim cursus. Morbi id
-            augue nec tortor facilisis imperdiet nec a leo. Praesent tempor
-            feugiat est a vestibulum. Vestibulum dapibus quam at convallis
-            finibus. In nec vestibulum mi. In non lectus non sem rutrum molestie
-            sed vitae mi. Vestibulum accumsan pretium blandit. Fusce faucibus
-            quam vitae augue ultricies, ac congue justo efficitur. Praesent
-            viverra ultricies erat sed interdum. Donec nec sodales est, pharetra
-            luctus enim. In tincidunt leo eget feugiat euismod. Maecenas non
-            luctus magna, non imperdiet neque. Vestibulum pretium scelerisque
-            sem. Etiam sit amet turpis neque.
+            By providing cheap access to books for the young African, we believe this would pave way for Africans to tell their own story; through written, audio and digital literature.
           </p>
         </div>
         <div class="md:w-1/2">
@@ -99,9 +75,12 @@
               ORUNLA Books Store Africa
             </h3>
             No. 6, Behind LEA Primary School,<br />Ruga-Auta - Mararaba,
-            Karu,<br />Nasarawa State, Nigeria. <br /><br />
-            <div class="w-1/4 pt-1 bg-primary rounded" />
-            <br />
+            Karu,<br />Nasarawa State, Nigeria.
+            <div class="flex gap-2 my-4">
+              <div class="w-1/4 pt-1 bg-primary rounded" />
+              <div class="w-[10px] pt-1 bg-[#171340] rounded" />
+              <div class="w-[20px] pt-1 bg-secondary rounded" />
+            </div>
             No. 105, Okporo Rd., <br />
             Rumuodara, Port-Harcourt,<br />
             Rivers State, Nigeria.
