@@ -107,11 +107,11 @@
             <a href="">
               <AppButton class="w-full md:w-auto" shadow>Get Started</AppButton>
             </a>
-            <nuxt-link to="">
+            <a href="#learn-more">
               <AppButton class="w-full md:w-auto" type="secondary" shadow
                 >Learn More</AppButton
               >
-            </nuxt-link>
+            </a>
           </div>
         </div>
         <div
@@ -122,11 +122,13 @@
               src="~/assets/img/V-Books.png"
               class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
+              alt="Books arranged in a V shape"
             />
             <img
               src="~/assets/img/CyanBooks.png"
               class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
+              alt="Books in a Cyan paperback"
             />
             <div
               class="absolute bottom-[55%] md:bottom-1/2 -left-4 md:-left-5 rounded-full h-[24px] w-[24px] md:h-[56px] md:w-[56px] bg-secondary shadow-xl flex items-center justify-center"
@@ -143,7 +145,7 @@
               </svg>
             </div>
             <div
-              class="absolute bottom-10 -left-3 md:-left-20 bg-white text-[#171340] rounded-full shadow-xl px-3 md:px-0 h-[31px] md:w-[204px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
+              class="absolute bottom-10 -left-3 md:-left-20 bg-white text-[#171340] rounded-full shadow-xl px-3 md:px-0 h-[31px] md:w-[204px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-[16px]"
               data-animate="pop"
             >
               <svg
@@ -166,6 +168,7 @@
               src="~/assets/img/ScienceBooks.png"
               class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
+              alt="Science books stacked on each other"
             />
             <div
               class="absolute bottom-1 -left-2 md:-bottom-7 md:-left-7 rounded-full h-[27px] w-[27px] md:h-[56px] md:w-[56px] bg-danger shadow-xl flex items-center justify-center"
@@ -182,7 +185,7 @@
               </svg>
             </div>
             <div
-              class="absolute top-10 -right-3 md:-right-20 bg-white text-[#171340] rounded-full shadow-xl p-3 md:px-0 w-[190px] md:w-[220px] h-[30px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-md"
+              class="absolute top-10 -right-3 md:-right-20 bg-white text-[#171340] rounded-full shadow-xl p-3 md:px-0 w-[190px] md:w-[220px] h-[30px] md:h-[60px] flex justify-center items-center gap-3 font-semibold text-sm md:text-[16px]"
               data-animate="pop"
             >
               <svg
@@ -203,6 +206,7 @@
       </div>
     </section>
     <section class="relative pt-[100px] md:pt-[150px]">
+      <a id="learn-more" name="learn-more"></a>
       <div class="absolute top-0 left-0">
         <svg
           width="472"
@@ -444,26 +448,28 @@
     </section>
     <section class="md:block relative pt-[150px] pb-[100px]">
       <div
-        class="md:w-[1200px] 2xl:w-[1400px] md:mx-auto md:my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row md:items-end gap-20"
+        class="md:mx-auto md:my-0 py-[16px] pl-[20px] relative flex flex-col md:flex-row md:items-end gap-20"
       >
         <div
-          class="md:w-1/3 md:pb-32 text-center md:text-left"
-          data-animate="slide-in"
+          class="md:w-1/2 md:pb-32 text-center md:text-left flex justify-end"
+          data-animate="slide-n"
         >
-          <h2
-            class="text-2xl md:text-3xl font-bold font-heading text-[#171340]"
-          >
-            Trending Books
-          </h2>
-          <p class="text-[20px] text-black/75 mt-5">
-            Interesting African books Orunlans are reading at the moment that
-            you might want to try
-          </p>
+          <div class="md:w-[500px] 2xl:w-[600px]">
+            <h2
+              class="text-2xl md:text-3xl font-bold font-heading text-[#171340]"
+            >
+              Trending Books
+            </h2>
+            <p class="text-[20px] text-black/75 mt-5 md:w-2/3">
+              Interesting African books Orunlans are reading at the moment that
+              you might want to try
+            </p>
+          </div>
         </div>
-        <div class="md:w-2/3 md:px-10 w-full">
+        <div class="md:w-1/2 md:pl-10 w-full">
           <div
             ref="books"
-            class="overflow-x-scroll py-5 scrollbar-thin md:scrollbar-thumb-transparent md:scrollbar-track-transparent flex flex-nowrap gap-10 scroll-smooth"
+            class="overflow-x-scroll py-5 scrollbar-thin md:scrollbar-thumb-transparent md:scrollbar-track-transparent flex flex-nowrap gap-5 scroll-smooth"
           >
             <BookCard
               v-for="(book, i) in books"
@@ -718,8 +724,9 @@
                 type="email"
                 class="w-full md:w-[500px] bg-transparent outline-none hover:outline-none focus:outline-none placeholder:font-semibold placeholder:text-primary/50"
                 placeholder="Your Email"
+                disabled
               />
-              <AppButton>Submit</AppButton>
+              <AppButton disabled>Submit</AppButton>
             </div>
           </form>
         </div>

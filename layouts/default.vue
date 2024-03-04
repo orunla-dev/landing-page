@@ -15,6 +15,7 @@
           <img
             src="~/static/Orunla-Logo.png"
             class="w-24 md:w-[167px] h-auto"
+            alt="Orunla Africa's Logo"
           />
         </nuxt-link>
         <div class="md:hidden">
@@ -38,6 +39,7 @@
               href="https://app.orunla.ng/books"
               target="_blank"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
+              rel="nofollow"
             >
               Books
             </a>
@@ -47,6 +49,7 @@
               href="https://app.orunla.ng/clubs"
               target="_blank"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
+              rel="nofollow"
             >
               Clubs
             </a>
@@ -61,10 +64,10 @@
           </li>
         </ul>
         <div class="hidden md:flex gap-[24px]">
-          <a href="https://app.orunla.ng/auth/login" target="_blank">
+          <a href="https://app.orunla.ng/auth/login" target="_blank" rel="nofollow">
             <AppButton type="secondary">Log in</AppButton>
           </a>
-          <a href="https://app.orunla.ng" target="_blank">
+          <a href="https://app.orunla.ng" target="_blank" rel="nofollow">
             <AppButton>Sign Up</AppButton>
           </a>
         </div>
@@ -222,9 +225,7 @@
                 class="text-white hover:text-white/75 block mb-2"
                 >About Us</nuxt-link
               >
-              <nuxt-link
-                to="/faq"
-                class="text-white hover:text-white/75 block mb-2"
+              <nuxt-link to="" class="text-white hover:text-white/75 block mb-2"
                 >FAQs</nuxt-link
               >
             </div>
@@ -241,6 +242,7 @@
                 href="https://app.orunla.com/books"
                 target="_black"
                 class="text-white hover:text-white/75 block mb-2"
+                rel="nofollow"
               >
                 Books
               </a>
@@ -260,6 +262,7 @@
                 href="https://blog.orunla.com"
                 target="_black"
                 class="text-white hover:text-white/75 block mb-2"
+                rel="nofollow"
               >
                 Blog
               </a>
@@ -274,9 +277,9 @@
                 hi@orunla.ng
               </a>
               <p class="">
-                105, Okporo Rd., Rumuodara,<br />
-                Port-Harcourt, Rivers,<br />
-                Nigeria.
+                No. 105, Okporo Rd.,<br />
+                Rumuodara, Port-Harcourt,<br />
+                Rivers State, Nigeria.
               </p>
             </div>
           </div>
@@ -317,6 +320,30 @@ export default {
   data() {
     return {
       menu: false,
+    }
+  },
+  head() {
+    return {
+      script: [
+        {
+          json: {
+            '@context': 'https://schema.org',
+            '@type': 'Corporation',
+            name: 'Orunla Africa',
+            alternateName: 'Orunla',
+            email: 'hi@orunla.ng',
+            url: 'https://orunla.ng',
+            logo: 'https://res.cloudinary.com/orunla/image/upload/v1679113100/Orunla/fqypmi0ecroup7miero4.jpg',
+            sameAs: [
+              'https://orunla.ng',
+              'https://linkedin.com/company/orunla-africa',
+              'https://instagram.com/orunla_africa',
+              'https://x.com/orunla_africa',
+            ],
+          },
+          type: 'application/ld+json',
+        },
+      ],
     }
   },
   watch: {
