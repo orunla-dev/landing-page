@@ -40,7 +40,7 @@
               target="_blank"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
               rel="nofollow"
-               aria-label="See books on Orunla"
+              aria-label="See books on Orunla"
             >
               Books
             </a>
@@ -51,7 +51,7 @@
               target="_blank"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
               rel="nofollow"
-               aria-label="See reading clubs on Orunla"
+              aria-label="See reading clubs on Orunla"
             >
               Clubs
             </a>
@@ -59,7 +59,7 @@
           <li class="w-full">
             <nuxt-link
               to="/about"
-               aria-label="Read about Orunla"
+              aria-label="Read about Orunla"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
             >
               About
@@ -67,10 +67,20 @@
           </li>
         </ul>
         <div class="hidden md:flex gap-[24px]">
-          <a href="https://app.orunla.ng/auth/login" target="_blank" aria-label="Login to Orunla" rel="nofollow">
+          <a
+            href="https://app.orunla.ng/auth/login"
+            target="_blank"
+            aria-label="Login to Orunla"
+            rel="nofollow"
+          >
             <AppButton type="secondary">Log in</AppButton>
           </a>
-          <a href="https://app.orunla.ng" target="_blank" aria-label="Sign up on Orunla" rel="nofollow">
+          <a
+            href="https://app.orunla.ng"
+            target="_blank"
+            aria-label="Sign up on Orunla"
+            rel="nofollow"
+          >
             <AppButton>Sign Up</AppButton>
           </a>
         </div>
@@ -166,7 +176,7 @@
                 href="https://x.com/orunla_africa"
                 target="_blank"
                 class="block p-3 bg-white rounded-full"
-                 aria-label="Orunla Africa on Twitter"
+                aria-label="Orunla Africa on Twitter"
               >
                 <svg
                   width="14"
@@ -187,7 +197,7 @@
                 href="https://linkedin.com/company/orunla-africa"
                 target="_blank"
                 class="block p-3 bg-white rounded-full"
-                 aria-label="Orunla Africa on Linkedin"
+                aria-label="Orunla Africa on Linkedin"
               >
                 <svg
                   width="12"
@@ -206,7 +216,7 @@
                 href="https://instagram.com/orunla_africa"
                 target="_blank"
                 class="block p-3 bg-white rounded-full"
-                 aria-label="Orunla Africa on Instagram"
+                aria-label="Orunla Africa on Instagram"
               >
                 <svg
                   width="14"
@@ -346,6 +356,16 @@ export default {
               'https://instagram.com/orunla_africa',
               'https://x.com/orunla_africa',
             ],
+          },
+          type: 'application/ld+json',
+        },
+        {
+          json: {
+            '@context': 'https://schema.org',
+            '@type': 'WebSite',
+            name: 'Orunla',
+            alternateName: ['Orunla Africa', 'Orunla Book store Africa'],
+            url: 'https://orunla.ng',
           },
           type: 'application/ld+json',
         },
