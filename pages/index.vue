@@ -119,16 +119,18 @@
         >
           <div class="w-1/2 flex flex-col gap-5 md:gap-10 relative">
             <img
-              src="~/assets/img/V-Books.png"
+              src="~/assets/img/V-Books.webp"
               class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
               alt="Books arranged in a V shape"
+              width="100%"
             />
             <img
-              src="~/assets/img/CyanBooks.png"
+              src="~/assets/img/CyanBooks.webp"
               class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
               alt="Books in a Cyan paperback"
+              width="100%"
             />
             <div
               class="absolute bottom-[55%] md:bottom-1/2 -left-4 md:-left-5 rounded-full h-[24px] w-[24px] md:h-[56px] md:w-[56px] bg-secondary shadow-xl flex items-center justify-center"
@@ -165,10 +167,11 @@
           </div>
           <div class="w-1/2 relative">
             <img
-              src="~/assets/img/ScienceBooks.png"
+              src="~/assets/img/ScienceBooks.webp"
               class="w-full h-auto rounded-[16px] block"
               data-animate="pop"
               alt="Science books stacked on each other"
+              width="100%"
             />
             <div
               class="absolute bottom-1 -left-2 md:-bottom-7 md:-left-7 rounded-full h-[27px] w-[27px] md:h-[56px] md:w-[56px] bg-danger shadow-xl flex items-center justify-center"
@@ -485,6 +488,7 @@
                 'bg-primary text-white': scroll === 'left',
                 'bg-white text-primary': scroll === 'right',
               }"
+              aria-label="Previous"
               @click="changeScroll('left')"
             >
               <svg width="24" height="24" viewBox="0 0 24 24">
@@ -508,6 +512,7 @@
                 'bg-primary text-white': scroll === 'right',
                 'bg-white text-primary': scroll === 'left',
               }"
+              aria-label="Next"
               @click="changeScroll('right')"
             >
               <svg width="24" height="24" viewBox="0 0 24 24">
@@ -634,9 +639,14 @@
         class="min-h-[80vh] md:w-[1200px] 2xl:w-[1400px] mx-auto my-0 py-[16px] px-[20px] relative flex flex-col md:flex-row items-center justify-end gap-20"
       >
         <div
-          class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 mf:order-1"
+          class="md:py-0 md:absolute md:top-0 md:-left-[600px] order-2 md:order-1"
         >
-          <AppGlobe class="scale-[2] md:scale-[1]" />
+          <img
+            src="~/assets/img/Map.webp"
+            width="100%"
+            alt="Picture of the World with some avatar above it"
+            data-animate="slideIn"
+          />
         </div>
         <div
           class="md:w-1/2 text-center md:text-left order-1 md:order-2"
@@ -741,10 +751,10 @@ import gsap from 'gsap'
 import { ScrollTrigger } from 'gsap/dist/ScrollTrigger'
 import { ScrollToPlugin } from 'gsap/dist/ScrollToPlugin'
 
-import ArrowOfGod from '~/assets/img/arrow-of-god.jpg'
-import DeepWorks from '~/assets/img/deep-work-cover.jpg'
-import Americanah from '~/assets/img/americanah.jpg'
-import RDPD from '~/assets/img/rich-dad-poor-dad.jpg'
+import ArrowOfGod from '~/assets/img/arrow-of-god.webp'
+import DeepWorks from '~/assets/img/deep-work-cover.webp'
+import Americanah from '~/assets/img/americanah.webp'
+import RDPD from '~/assets/img/rich-dad-poor-dad.webp'
 
 gsap.registerPlugin(ScrollTrigger, ScrollToPlugin)
 
