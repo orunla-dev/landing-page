@@ -1,6 +1,6 @@
 <template>
   <div class="min-h-screen">
-    <div class="text-center bg-secondary text-white p-3">
+    <div class="text-center bg-secondary text-black p-3">
       ⚠️ &nbsp;Orunla is in stealth mode, we are making the application even
       better for you.
     </div>
@@ -13,7 +13,7 @@
       >
         <nuxt-link to="/">
           <img
-            src="~/static/Orunla-Logo.png"
+            src="~/static/Orunla-Logo.webp"
             class="w-24 md:w-[167px] h-auto"
             alt="Orunla Africa's Logo"
           />
@@ -40,6 +40,7 @@
               target="_blank"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
               rel="nofollow"
+               aria-label="See books on Orunla"
             >
               Books
             </a>
@@ -50,6 +51,7 @@
               target="_blank"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
               rel="nofollow"
+               aria-label="See reading clubs on Orunla"
             >
               Clubs
             </a>
@@ -57,6 +59,7 @@
           <li class="w-full">
             <nuxt-link
               to="/about"
+               aria-label="Read about Orunla"
               class="text-primary/75 font-semibold hover:text-primary px-[5px] mb-[5px] block"
             >
               About
@@ -64,10 +67,10 @@
           </li>
         </ul>
         <div class="hidden md:flex gap-[24px]">
-          <a href="https://app.orunla.ng/auth/login" target="_blank" rel="nofollow">
+          <a href="https://app.orunla.ng/auth/login" target="_blank" aria-label="Login to Orunla" rel="nofollow">
             <AppButton type="secondary">Log in</AppButton>
           </a>
-          <a href="https://app.orunla.ng" target="_blank" rel="nofollow">
+          <a href="https://app.orunla.ng" target="_blank" aria-label="Sign up on Orunla" rel="nofollow">
             <AppButton>Sign Up</AppButton>
           </a>
         </div>
@@ -163,6 +166,7 @@
                 href="https://x.com/orunla_africa"
                 target="_blank"
                 class="block p-3 bg-white rounded-full"
+                 aria-label="Orunla Africa on Twitter"
               >
                 <svg
                   width="14"
@@ -183,6 +187,7 @@
                 href="https://linkedin.com/company/orunla-africa"
                 target="_blank"
                 class="block p-3 bg-white rounded-full"
+                 aria-label="Orunla Africa on Linkedin"
               >
                 <svg
                   width="12"
@@ -201,6 +206,7 @@
                 href="https://instagram.com/orunla_africa"
                 target="_blank"
                 class="block p-3 bg-white rounded-full"
+                 aria-label="Orunla Africa on Instagram"
               >
                 <svg
                   width="14"
@@ -248,8 +254,8 @@
               </a>
               <a
                 href="https://www.linkedin.com/feed/update/urn:li:activity:7161027794288689153"
-                target="_black hover:text-white/75 block mb-2"
-                class="text-white"
+                target="_blank"
+                class="text-white hover:text-white/75 block mb-2"
               >
                 Support
                 <span

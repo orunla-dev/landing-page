@@ -50,26 +50,21 @@ export default {
       },
       {
         rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,600;1,700&family=Quicksand:wght@400;600&display=swap',
-      },
-      {
-        rel: 'stylesheet',
-        href: 'https://fonts.googleapis.com/css2?family=Inter:wght@900&display=swap',
+        href: 'https://fonts.googleapis.com/css2?family=Quicksand:wght@400&family=Inter:wght@900&display=swap',
       },
     ],
     script: [
       {
         src: 'https://www.googletagmanager.com/gtag/js?id=G-L240M3DEG4',
-        async: true
+        async: true,
       },
       {
-        src: 'js/ga.js'
-      }
+        src: 'js/ga.js',
+      },
     ],
   },
 
   // Global CSS: https://go.nuxtjs.dev/config-css
-  css: ['@/static/icofont.min.css'],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
   plugins: [],
