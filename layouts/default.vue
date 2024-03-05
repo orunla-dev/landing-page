@@ -341,34 +341,34 @@ export default {
   head() {
     return {
       script: [
-        // {
-        //   json: {
-        //     '@context': 'https://schema.org',
-        //     '@type': 'Corporation',
-        //     name: 'Orunla Africa',
-        //     alternateName: 'Orunla',
-        //     email: 'hi@orunla.ng',
-        //     url: 'https://orunla.ng',
-        //     logo: 'https://res.cloudinary.com/orunla/image/upload/v1679113100/Orunla/fqypmi0ecroup7miero4.jpg',
-        //     sameAs: [
-        //       'https://orunla.ng',
-        //       'https://linkedin.com/company/orunla-africa',
-        //       'https://instagram.com/orunla_africa',
-        //       'https://x.com/orunla_africa',
-        //     ],
-        //   },
-        //   type: 'application/ld+json',
-        // },
         {
           json: {
             '@context': 'https://schema.org',
-            '@type': 'WebSite',
-            name: 'Orunla',
-            alternateName: ['Orunla Africa', 'Orunla Book store Africa'],
+            '@type': 'Corporation',
+            name: 'Orunla Africa',
+            alternateName: 'Orunla',
+            email: 'hi@orunla.ng',
             url: 'https://orunla.ng',
+            logo: 'https://res.cloudinary.com/orunla/image/upload/v1679113100/Orunla/fqypmi0ecroup7miero4.jpg',
+            sameAs: [
+              'https://orunla.ng',
+              'https://linkedin.com/company/orunla-africa',
+              'https://instagram.com/orunla_africa',
+              'https://x.com/orunla_africa',
+            ],
           },
           type: 'application/ld+json',
         },
+        // {
+        //   json: {
+        //     '@context': 'https://schema.org',
+        //     '@type': 'Website',
+        //     name: 'Orunla',
+        //     alternateName: ['Orunla Africa', 'Orunla Book store Africa'],
+        //     url: 'https://orunla.ng',
+        //   },
+        //   type: 'application/ld+json',
+        // },
       ],
     }
   },
