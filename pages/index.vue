@@ -646,6 +646,7 @@
             width="100%"
             alt="Picture of the World with some avatar above it"
             data-animate="slideIn"
+            loading="lazy"
           />
         </div>
         <div
