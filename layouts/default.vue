@@ -259,7 +259,7 @@
               >
                 Support
                 <span
-                  class="text-secondary font-semibold bg-white inline-block p-1 text-xs rounded"
+                  class="text-secondary font-semibold bg-primary inline-block p-1 text-xs rounded"
                 >
                   #OBD
                 </span>
